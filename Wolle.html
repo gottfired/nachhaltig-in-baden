@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="de-DE">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Nachhaltig in Baden</title>
+  <link href="nachhaltig.css" type="text/css" rel="stylesheet">
+  <meta name="author" content="Florian Chen">
+  <meta name="description" content="Umweltbewusst und regional Einkaufen, Initiativen in Baden, Informationen und TIpps für ein nachhaltiges Leben und alle interessanten Termine dazu.">
+  <link rel="icon" href="https://www.heraldry-wiki.com/heraldrywiki/images/3/3c/Baden.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Start</a>
+    <a href="Essen.html">Essen</a>
+    <div class="dropdown">
+      <button onclick="Technologie()" class="dropbtn">Technologie
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="Technologie" class="dropdown-content">
+        <a href="Energie.html">Energie</a>
+        <a href="Verkehr.html">Verkehr</a>
+        <a href="CO2Komp.html">CO<sub>2</sub> Kompensation</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button style="background-color: white; color: #043927;" onclick="OnlineHandel()" class="dropbtn">Überregional
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="OnlineHandel" class="dropdown-content">
+        <a href="Online-Handel.html">Online Handel</a>
+        <a href="Wolle.html" class="active">Wolle</a>
+        <a href="ZeroWaste.html">Zero Waste</a>
+        <a href="divGesch.html">diverse Geschäfte</a>
+      </div>
+    </div>
+    <a href="Weiterverwenden.html">Weiterverwenden</a>
+    <a href="MonatlichesKochrezept.html">Monatliches Kochrezept</a>
+    <a href="WoechentlicherTipp.html">Wöchentlicher Tipp</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+  </div>
+
+  <script>
+    function Technologie() {
+      document.getElementById("Technologie").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    function OnlineHandel() {
+      document.getElementById("OnlineHandel").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <div style="background-image: url(Bilder/Wolle.jpg); display: flex; justify-content: center;" class="topcontainer">
+
+    <h1 id="header" style="top:40%;">Wolle</h1>
+
+  </div>
+
+  <div class="text_container">
+
+    <div id="text">
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.strick-mir-was.at/de/"><img style="max-width: 200px;"
+            class="item" style=" flex:1;" src="Bilder/Strick-mir-was.png"></a>
+        <p class="itemm" style="flex:4; "><b>Strick mir was</b><br>Hemma C. Brandstetter, selbst
+          leidenschaftliche Handarbeiterin hat sich auf Öko-Wolle, regionale Biowolle und
+          tierfreie Wolle (z. B. Maiswolle) sowie wunderschönes daraus in Handarbeit (nach
+          Maß) erstelltes ökologisches Woll-Design spezialisiert <br>(incl. Amigurumi). Das gesamte
+          Sortiment ist mulesing-frei!</p>
+        <p class="item" style="flex:2; "><br>Adresse: Herzogenburger Gasse 3/2,<br>3433 Königstetten <br>
+          Telefon: +43 680 30 27 348 <br>
+          E-Mail:  willkommen@strick-mir-was.at<br>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.strick-mir-was.at/de/">zur Website</a></p>
+      </div>
+
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.biowol.at/"><img style="max-width: 200px;"
+          class="item" style="flex:1;" src="https://www.biowol.at/images/logos/_biowol_logo_final_logo.jpg"></a>
+        <p class="itemm" style="flex:4; "><b>Biowol</b><br>Die neue Linie von Hemma C. Brandstetter:
+          Ausschließlich österreichische Schafschurwolle von gesunden lebenden Schafen aus
+          kontrolliert biologischer Tierhaltung (kbT) und Produkte daraus, die im Einklang mit
+          Ökologie und Nachhaltigkeit stehen. In Zusammenarbeit mit heimischen Unternehmen
+          wird großer Wert auf Tier- und Umweltschutz gelegt, die Produkte werden
+          umweltbewusst verpackt, einige davon sind auch ganz verpackungsfrei erhältlich. Hier
+          gibt es auch mit dem Gütezeichen “biologisch gärtnern“ ausgezeichnete Bio-
+          Düngerpellets aus Schafschurwolle für den Garten oder Bio-Wollkügelchen als
+          Füllmaterial.<br>(incl. Amigurumi). Das gesamte
+          Sortiment ist mulesing-frei!</p>
+        <p style="flex:2;" class="item"><br>Adresse: Herzogenburger Gasse 3/2,<br>3433 Königstetten <br>
+          Telefon: +43 680 30 27 348 <br>
+          E-Mail:  willkommen@biowol.at<br>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.biowol.at/">zur Website</a></p>
+      </div>
+
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="http://isabellascherabon.at/wechselwolle.at/"><img style="max-width: 200px;"
+          class="item" style="flex:1;" src="http://isabellascherabon.at/wechselwolle.at/images/pressefoto2018_quer.jpg"></a>
+        <p class="itemm" style="flex:4;"><b>Wechselwolle</b><br>Altes, österreichisches
+          Kunsthandwerk lebt auf. Isabella Scherabon engagiert sich seit Jahren dafür, dem
+          Rohstoff Wolle aus dem Wechselgebiet wieder seine Wichtigkeit zurückzugeben. Als
+          Filzkünstlerin veranstaltet sie Marktfeste, Filzkunstwanderwege, Schulprojekte und
+          Ausstellungen. Das schönste daran: Für ihre Filzkunst verwendet sie Wolle aus dem
+          Feistritztal – von persönlich bekannten Schafen. Unser Tipp: Besuch das Marktfest, da
+          gibt es viele Aussteller, die sich mit dem nachwachsenden Rohstoffe Wolle aus unserer
+          Region und natürlichen Färbemethoden beschäftigen.</p>
+        <p class="item" style="flex:2;"><br>Adresse: Lehen 7, <br>2880 Kirchberg am Wechsel<br>
+          Telefon: 0043 (0) 699 110 191 75 <br>
+          E-Mail: info@wechselwolle.at<br>
+          <a target="_blank" rel="noopener noreferrer" href="http://isabellascherabon.at/wechselwolle.at/">zur Website</a></p>
+      </div>
+
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="http://www.spindel.at"><img style="max-width: 200px;"
+          class="item" style="flex:1;" src="http://www.spindel.at/SpLogo/Schildflach.gif"></a>
+        <p class="itemm" style="flex:4;"><b>Die Spindel in Langenlois</b><br>Ulrike Müller-Kaspar wäscht, färbt
+          und spinnt Wolle direkt vom Schaf. Aus einem vagen „Damit dieses Wissen nicht
+          verloren geht“ wurde ein überzeugtes Eintreten für die Verwendung einheimischer
+          Schafwolle. Ihr Wissen gibt sie gerne in verschiedenen Workshops und Kursen weiter
+          (Spinnen, Filzen, Stricken), außerdem kann bei ihr echte Waldviertler Wolle gekauft
+          werden.</p>
+        <p class="item" style="flex:2;"><br>Adresse: Zwettler Straße 67, <br>3550 Langenlois<br>
+          Telefon: +43-650-5701204 <br>
+          E-Mail: die@spindel.at<br>
+          <a target="_blank" rel="noopener noreferrer" href="http://www.spindel.at">zur Website</a></p>
+      </div>
+
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.wollhandwerk.at"><img style="max-width: 200px;"
+          class="item" style="flex:1;" src="Bilder/Wollhandwerk.png"></a>
+        <p class="itemm" style="flex:4;"><b>Wollhandwerk</b><br>Christine Söllner bietet Wolle aus
+          biologischer Landwirtschaft und artgerechter Tierhaltung in der Buckligen Welt (die
+          Schafe dienen zur Landschaftspflege der Pferdeweiden und werden nicht
+          geschlachtet)an, es gibt handversponnene Wollgarne und auch bei der Färbung wird
+          großer Wert auf Färbepflanzen gelegt. Weiters hält Frau Söllner verschiedene Spinn-,
+          Web- und Färbekurse.</p>
+        <p class="item" style="flex:2;"><br>Adresse: Altenheimstraße 21,<br>2831 Gleißenfeld<br>
+          Telefon: +43 699 1 913 65 62<br>
+          E-Mail: kontakt@wollhandwerk.at<br>
+          <a target="_blank" rel="noopener noreferrer" href="http://www.wollhandwerk.at">zur Website</a></p>
+      </div>
+      
+  </div>
+
+  </div>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="de-DE">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Nachhaltig in Baden</title>
+  <link href="nachhaltig.css" type="text/css" rel="stylesheet">
+  <meta name="author" content="Florian Chen">
+  <meta name="description" content="Umweltbewusst und regional Einkaufen, Initiativen in Baden, Informationen und TIpps für ein nachhaltiges Leben und alle interessanten Termine dazu.">
+  <link rel="icon" href="https://www.heraldry-wiki.com/heraldrywiki/images/3/3c/Baden.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Start</a>
+    <a href="MonatlichesKochrezept.html">Monatliches Kochrezept</a>
+    <a href="WoechentlicherTipp.html">Wöchentlicher Tipp</a>
+    <a href="Essen.html">Essen</a>
+    <div class="dropdown">
+      <button onclick="Technologie()" class="dropbtn">Technologie
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="Technologie" class="dropdown-content">
+        <a href="Energie.html">Energie</a>
+        <a href="Verkehr.html">Verkehr</a>
+        <a href="CO2Komp.html">CO<sub>2</sub> Kompensation</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button onclick="OnlineHandel()" class="dropbtn">Überregional
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="OnlineHandel" class="dropdown-content">
+        <a href="Online-Handel.html">Online Handel</a>
+        <a href="Wolle.html">Wolle</a>
+        <a href="ZeroWaste.html">Zero Waste</a>
+        <a href="divGesch.html" class="active">diverse Geschäfte</a>
+      </div>
+    </div>
+    <a href="Weiterverwenden.html">Weiterverwenden</a>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+  </div>
+
+  <script>
+    function Technologie() {
+      document.getElementById("Technologie").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    function OnlineHandel() {
+      document.getElementById("OnlineHandel").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <div class="container">
+
+    <h1 id="header">Diverse Geschäfte</h1>
+
+    <div id="text">
+      <p><a target="_blank" rel="noopener noreferrer" href="http://mass-greisslerei.at"><b>Lunzers Maßgreißlerei</b></a>:
+        Heinestraße 35, 1020 Wien </p>
+      <p><a target="_blank" rel="noopener noreferrer" href="https://www.warenhandlung.at/de/news/"><b>Warenhandlung</b></a>:<br>Marxergasse
+        13, 1030 Wien</p>
+      <p>Henry-Laden: <br>Wiener Str. 27, 2345 Brunn am Gebirge</p>
+      <p><a target="_blank" rel="noopener noreferrer" href="http://www.hutundstiel.at/"><b>Hut und Stiel</b></a>: <br>Austernpilzzucht
+        auf Kaffeesud</p>
+    </div>
+  </div>
+
+</body>
+
+
+</html>

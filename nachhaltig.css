@@ -1,0 +1,227 @@
+.text_container {
+    margin:0 auto;
+    max-width: 1300px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+html, body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    font-family: 'Signika', sans-serif;
+}
+
+body {
+    padding-top: 0px;
+}
+#text {
+    margin: 60px 0%;
+    font-size: 18px;
+    line-height: 28.8px;
+}
+li{
+  margin: 20px 0;
+}
+#mon li {
+    margin: 5px 0;
+}
+#pic {
+    float: right;
+}
+
+.content_container{
+    margin: 40px 0;
+    display:flex; 
+    justify-content: space-between;
+}
+
+.item{
+    margin: 0 5px;
+}
+.itemm{
+    margin:0 40px;
+}
+.topcontainer{
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:6vw;
+}
+
+#header{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+    position:absolute;    
+    text-align: center;
+}
+
+
+/* Style the links inside the navigation bar */
+/* Add a black background color to the top navigation */
+.topnav {   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #043927; 
+    z-index: 100;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+.topnav a {
+    -webkit-transition: opacity .5s, background .5s, color .5s;
+    -moz-transition: opacity .5s, background .5s, color .5s;
+    -o-transition: opacity .5s, background .5s, color .5s;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: #043927;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 17px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #043927;
+  font-family: inherit; 
+  margin: 0; 
+  -webkit-transition: opacity .5s, background .5s, color .5s;
+    -moz-transition: opacity .5s, background .5s, color .5s;
+    -o-transition: opacity .5s, background .5s, color .5s;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #043927;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown .dropbtn:hover{
+    color: #043927;
+    background-color: white;
+}
+.show {display: block;}
+
+.active:link {
+    color: #043927;
+    background-color: white;
+}
+.active:visited {
+    color: #043927;
+    background-color: white;
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .topnav {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1000px) {
+    .content_container{
+        flex-direction: column;
+        margin: 100px 0;
+    }
+    .item {
+        margin: 0px 20px;
+    }
+    .itemm{
+        margin: 0px 20px;
+    }
+    body {
+    padding-top: 0px;
+    }
+    .topnav {
+    position: fixed;
+    }
+    .topnav a {
+    display: block;
+    text-align: left;
+    }
+    .topnav a:not(:first-child) {
+    display: none;
+    }
+    .topnav .dropdown {
+    display: none; 
+    }
+  .topnav a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+  }
+  #header{
+      font-size: 120px;
+  }
+    
+  /* .topnav.responsive {
+    position: relative;
+  } */
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {
+    display: block;
+    float: inherit
+    
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+    .break-word {
+        word-break: break-all;
+    }
+    
+    .active:link{
+        background-color: #043927; 
+        color: white;
+    }
+    
+     .active:visited{
+        background-color: #043927; 
+        color: white;
+    }
+}

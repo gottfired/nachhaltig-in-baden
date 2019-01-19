@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="de-DE">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Nachhaltig in Baden</title>
+  <link href="nachhaltig.css" type="text/css" rel="stylesheet">
+  <meta name="author" content="Florian Chen">
+  <meta name="description" content="Umweltbewusst und regional Einkaufen, Initiativen in Baden, Informationen und TIpps für ein nachhaltiges Leben und alle interessanten Termine dazu.">
+  <link rel="icon" href="https://www.heraldry-wiki.com/heraldrywiki/images/3/3c/Baden.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Start</a>
+    <a href="MonatlichesKochrezept.html">Monatliches Kochrezept</a>
+    <a href="WoechentlicherTipp.html">Wöchentlicher Tipp</a>
+    <a href="Essen.html" class="active">Essen</a>
+    <div class="dropdown">
+      <button onclick="Technologie()" class="dropbtn">Technologie
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="Technologie" class="dropdown-content">
+        <a href="Energie.html">Energie</a>
+        <a href="Verkehr.html">Verkehr</a>
+        <a href="CO2Komp.html">CO<sub>2</sub> Kompensation</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button onclick="OnlineHandel()" class="dropbtn">Überregional
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="OnlineHandel" class="dropdown-content">
+        <a href="Online-Handel.html">Online Handel</a>
+        <a href="Wolle.html">Wolle</a>
+        <a href="ZeroWaste.html">Zero Waste</a>
+        <a href="divGesch.html">diverse Geschäfte</a>
+      </div>
+    </div>
+    <a href="Weiterverwenden.html">Weiterverwenden</a>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+  </div>
+
+  <script>
+    function Technologie() {
+      document.getElementById("Technologie").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    function OnlineHandel() {
+      document.getElementById("OnlineHandel").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <div class="container">
+
+    <h1 id="header">Essen</h1>
+
+    <div id="text">
+      <div id="eatlist">
+        <ul>
+
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.adamah.at/"><b>Biokistl Adamah</b></a>:
+            <br> CO2 neutrale Lieferung von verschiedenen Biokistln oder
+            auch „a la carte“ jeweils am Mittwoch im Bezirk Baden. <br> Unser Tipp: unbedingt das Brot dazu
+            kosten, sie liefern auch Brot von 3 verschiedenen Bäckern (Joseph Brot, Bio Vollkornbäcker
+            Clemens Waldherr, Bio Hofbäckerei Mauracher), Milchprodukte, Eier, Fleisch und Fisch,
+            Grundnahrunsmittel, Kosmetik etc.</li>
+
+          <li><a target="_blank" rel="noopener noreferrer" href="https://biomitter.at"><b>Biokistl Mitter</b></a>:<br>Hauszustellung
+            jeweils freitags, liefert Bio Obst und
+            Gemüse, aber auch Gebäck, Fleisch, Milchprodukte, Säfte, Reinigungsmittel etc.</li>
+
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/bauernhof.familie.osterer/"><b>Biobauer
+                Osterer</b></a>:<br> Traiskirchner Str. 1, 2512 Tribuswinkel <br>Tel. 02252 45767<br><br>
+            sehr netter Familienbetrieb mit
+            Biogemüse nach Saison (z. B. Fisolen, Kürbisse, Zwiebel, Knoblauch, Karotten, Kartoffel,
+            Süßkartoffel, Pastinaken etc.), außerdem Kindergeburtstag am Bauernhof</li>
+
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.biohof-broschek.at"><b>Biohof Broschek</b></a>:
+            <br> Hauptstr. 43, 2353 Guntramsdorf <br>Tel. 02236 – 52009 <br> Öffnungszeiten: Dienstag und Freitag
+            8:30-18h, Samstag 8.30 – 13h <br><br>Familie
+            Broschek hat ihre eigene Landwirtschaft bereits 1988 auf biologische Bewirtschaftung
+            umgestellt, seit 1993 vermarkten sie im Hofladen ihre eigenen Produkte sowie eine große
+            Vielfalt an Fleisch, Brot, Milchprodukten, Säften, Naturkosmetik, Reinigungsmittel etc.</li>
+
+          <li><a target="_blank" rel="noopener noreferrer" href="http://www.brotgemeinschaft.at"><b>Brotgemeinschaft
+                Baden</b></a>: <br> Dieser Verein trifft sich 2-
+            wöchentlich jeweils donnerstags zum Brotbacken. Nach Voranmeldung können Vollkornbrot
+            und verschiedene Weckerl gekauft werden. Ziel des Vereins ist es, Menschen durch das
+            Brotbacken zu berühren und sozial benachteiligte Menschen auf der ganzen Welt zu
+            unterstützen.</li>
+
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.gartenderbegegnung.com/"><b>Garten der
+                Begegnung</b></a>: <br>Akademiestraße Ecke Einödgasse 2514 Traiskirchen <br>Tel. 0699 11176565
+            <br> Öffnungszeiten Landwirtschaft: DI &amp; FR 14-18:00, Achtung: Winterpause<br><br>
+            Der Garten der Begegnung ist ein öko-soziales Landwirtschaftsprojekt,
+            in dem Interessierte, TraiskirchnerInnen, SchülerInnen, Asylsuchende gemeinsam
+            Obst und Gemüse ökologisch anbauen und verarbeiten.
+            Der Garten ist ein Ort, der für alle offen ist. Hier kann man einander kennenlernen, sich
+            austauschen und an der frischen Luft einer sinnvollen und gesunden Tätigkeit nachgehen und dabei
+            viel voneinander lernen.
+            <br><br>
+            Unser Tipp: Orientalisches Frühstück am Samstag ab 11h</li>
+
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pages/category/Shopping---Retail/Unser-Laden-709897155713102/"><b>Unser
+                Laden</b></a>: <br>Mühlgasse 38, 2500 Baden, <br>Tel: 0660/7398866
+            <br>Öffnungszeiten: Dienstag Freitag 8-18:30 und Samstag 8-12 <br><br> Familie
+            Lackinger hat die Hersteller aller ihrer Lebensmittel persönlich kennengelernt, sie führen
+            Lebensmittel aus der Region, v.a. saisonal Obst und Gemüse, Milchprodukte, Backwaren,
+            Fleisch auf Bestellung. <br><br> Unser Tipp: im Geschäft einen frischen Saft trinken und eine Weile
+            abschalten </li>
+
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.suessesvomfeinsten.eu"><b>Konditorei
+                Herwig Gasser: Süßes vom Feinsten</b></a>: <br>Hauptplatz 17, 2500 Baden. <br>Tel:
+            02252/266026 </li>
+
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.unverschwendet.at/"><b>Unverschwendet</b></a>:
+            <br>erhältlich im online shop, <br>In Baden: Prokopp,
+            Rathausgasse 5-7, Merkurmarkt, Mühlgasse 48, <br>In Bad Vöslau: Prokopp Schlossplatz 4,
+            Merkurmarkt Industriestr. 12-14 <br><br>Unverschwendet rettet Lebensmittel, die sonst
+            weggeworfen würden und macht daraus köstliche Marmeladen, Chutneys, Sirupe,
+            Eingelegtes und vieles mehr. <br><br>Unser Tipp: Fruchtaufstrich aus Weingartenpfirsichen und
+            Zitronenthymian</li>
+
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.weltladen.at/baden/"><b>Weltladen Baden</b></a>:
+            <br>Hauptplatz 9-12, 2500 Baden, <br>Tel. Nr 02252 45236<br><br>
+            Einkaufen ist eine ethische Entscheidung und der faire
+            Handel ein effizientes Instrument der Entwicklungszusammenarbeit. Hier findest Du
+            Bekleidung, Nahrungsmittel, Schmuck und noch vieles mehr! <br><br> Unser Tipp: das integrierte
+            Stehcafe lädt zum Fairweilen und Fairstehen ein</li>
+
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.prokopp.co.at/blog/baden/"><b>Prokopp: Gewusst wie</b></a>: <br>Rathausgasse 5-7, 2500 Baden <br><br>
+            Gesunde Ernährung, Naturkosmetik, vegane Lebensmittel. <br><br>Unser Tipp: Vegetaria, das Restaurant, hier
+            gibt es köstliche und sehr kreative
+            Gerichte aus ausschließlich biologisch einwandfreien, regionalen Zutaten ohne
+            Konservierungs- und Zusatzstoffe, die je nach Saison variieren.</li>
+
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.tattendorf.at/muehle"><b>In der Mühle</b></a>:
+            <br>Landwirtschaftlicher Biobetrieb <br>Mühlgasse 8, 2523 Tattendorf <br>Mi, Fr 8-11h und 16-19h, Sa 8-14h
+            <br><br>
+            Weinbau, Ackerbau, Tiere. Eigener Hofladen , Familie Dachauer bietet auch im Rahmen von Schule am Bauernhof
+            lebendiges, lebensnahes Lernen für 6-10 jährige Kinder an</li>
+
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.bioschaefer.at/de/"><b>Fruchtsäfte Schäfer</b></a>:
+            <br>Badnerstr. 18, 2523 Tattendorf <br><br>
+            Gemüsesäfte, Heißgetränke und Sirupe, alles in Bioqualität</li>
+
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.freilaender.at/"><b>Biofleisch und –wurst
+                : Fleischerei Kollecker</b></a>: <br>Wienerstr. 114, Halle N, 2483 Ebreichsdorf<br><br>
+            Bioprodukte sind erhältlich nach Vorbestellung in der Firma in
+            Ebreichsdorf oder Abholstelle: <br> Unser Laden, Mühlgasse 38, 2500 Baden oder über den online
+            shop</li>
+
+          <li>Markt am Brusattiplatz, jeden Freitag von 8-14h: <br>manche der Stände bieten Bioprodukte
+            und manche bieten regionale Produkte, leider gibt es keine einheitliche Kennzeichnung,
+            bitte nachfragen! <br>Regelmäßig vertreten ist <a target="_blank" rel="noopener noreferrer" href="http://www.biomartin.at">BioMartin</a>:
+            Gemüse, Obst,
+            Wurst, Fleisch und Trockenwaren, teilweise auf Vorbestellung standl@biomartin.at</li>
+
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</body>
+
+
+</html>

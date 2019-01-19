@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="de-DE">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Nachhaltig in Baden</title>
+  <link href="nachhaltig.css" type="text/css" rel="stylesheet">
+  <meta name="author" content="Florian Chen">
+  <meta name="description" content="Umweltbewusst und regional Einkaufen, Initiativen in Baden, Informationen und TIpps für ein nachhaltiges Leben und alle interessanten Termine dazu.">
+  <link rel="icon" href="https://www.heraldry-wiki.com/heraldrywiki/images/3/3c/Baden.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Start</a>
+    <a href="Essen.html">Essen</a>
+    <div class="dropdown">
+      <button style="background-color: white; color: #043927;" onclick="Technologie()" class="dropbtn">Technologie
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="Technologie" class="dropdown-content">
+        <a href="Energie.html">Energie</a>
+        <a href="Verkehr.html" class="active">Verkehr</a>
+        <a href="CO2Komp.html">CO<sub>2</sub> Kompensation</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button onclick="OnlineHandel()" class="dropbtn">Überregional
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="OnlineHandel" class="dropdown-content">
+        <a href="Online-Handel.html">Online Handel</a>
+        <a href="Wolle.html">Wolle</a>
+        <a href="ZeroWaste.html">Zero Waste</a>
+        <a href="divGesch.html">diverse Geschäfte</a>
+      </div>
+    </div>
+    <a href="Weiterverwenden.html">Weiterverwenden</a>
+    <a href="MonatlichesKochrezept.html">Monatliches Kochrezept</a>
+    <a href="WoechentlicherTipp.html">Wöchentlicher Tipp</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+  </div>
+
+  <script>
+    function Technologie() {
+      document.getElementById("Technologie").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    function OnlineHandel() {
+      document.getElementById("OnlineHandel").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <div style="background-image: url(Bilder/Verkehr.jpg); display: flex; justify-content: center;" class="topcontainer">
+
+    <h1 id="header" style="top:40%;">Verkehr</h1>
+
+  </div>
+
+  <div class="text_container">
+
+    <div id="text">
+
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.nextbike.at/de/"><img style="max-width: 200px; flex:1;"
+            class="item" src="https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/12495140_10153295934290807_8750693532987520816_n.png?_nc_cat=108&_nc_ht=scontent-amt2-1.xx&oh=6bd39643cf7994b0d746dac10b058ead&oe=5CC8A7CA"></a>
+        <p class="itemm" style="flex:4;"><b>nextbike</b><br>Das Fahrradverleihsystem in Niederösterreich:
+          an 198 Verleihstellen in Niederösterreich stehen 3-Gang-Nextbikes 7 Tage die Woche
+          zur Verfügung. Egal ob Sie pendeln, einen Radausflug planen oder einfach nur
+          schnelle Erledigungen tätigen möchten, mit einem nextbike sind Sie flexibel
+          mobil. Einmal registrieren und nextbike weltweit nützen. Handy zücken,
+          aufsteigen und losradeln! Die nextbike Räder können von 20. März bis 15.
+          Novemberausgeborgt werden. nextbike wird von der NÖ Energie- &amp;
+          Umweltagentur Betriebs GmbH betrieben. Standorte in Baden: Schwartzstr. Vor
+          der Bezirkshauptmannschaft, Conrad-von-Hötzdendorf-Platz vor dem Bahnhof,
+          Brusattiplatz</p>
+        <p class="item" style="flex:2;"><br>Adresse: Grenzgasse 10,<br>3100 St. Pölten<br>
+          Telefon: 02742 22 99 01<br>
+          E-Mail: info@nextbike.at<br>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.nextbike.at/de/">zur Website</a></p>
+      </div>
+
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="http://ski-rad.at/"><img style="max-width: 200px; flex:1;"
+            class="item" src="http://ski-rad.at/wp/wp-content/uploads/2017/09/logo-normal.png"></a>
+        <p class="itemm" style="flex:4;"><b>Ski & Rad SIFKOVITS</b><br>Verleih, Verkauf und Service von Fahrrädern und
+          Schi. Hier finden
+          Sie auch aktuelle E- Bikemodelle zum Kaufen, Testen oder Mieten. <br>Unser Tipp: v.a.
+          für Kinder können hier Schi wunderbar ausgeborgt werden, immer in den passenden
+          Größen, große Auswahl, gute Beratung!</p>
+        <p class="item" style="flex:2;"><br>Adresse: Eugen Dahmstr. 1-3,<br>2514 Traiskirchen<br>
+          Telefon: 02252/56182<br>
+          E-Mail: office@ski-rad.at<br>
+          <a target="_blank" rel="noopener noreferrer" href="http://ski-rad.at/">zur Website</a></p>
+      </div>
+
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.drive-bea.at/"><img style="max-width: 200px; flex:1;"
+            class="item" src="https://www.drive-bea.at/images/bea/partner/bea-Verein.jpg"></a>
+        <p class="itemm" style="flex:4;"><b>bea - das Badener e-CarSharing</b><br>Bereits seit März 2014 gibt es diese
+          wunderbare Möglichkeit, mittlerweile 5 Elektroautos an
+          verschiedenen Standorten in Baden auszuborgen. Ziel des Projektes ist die gemeinsame
+          Nutzung von Elektroautos nach dem Motto: Wir schaffen das Erstauto nicht ab, aber
+          vielleicht machen wir das Zweitauto überflüssig.
+          2017 hat bea den Niederösterreichischen Mobilitätspreis gewonnen.
+          Außerdem gibt es mit bea holiday die Möglichkeit, auch den (Wochenend- )Urlaub mit einem
+          Elektroauto zu genießen.</p>
+        <p class="item" style="flex:2;"><br>Adresse: Eugengasse 23,<br>2500 Baden<br>
+          Telefon: +43-2252-86800-235<br>
+          E-Mail: mitmachen@drive-bea.at<br>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.drive-bea.at/">zur Website</a></p>
+      </div>
+
+      <div class="content_container">
+        <img style="max-width: 200px; max-height: 200px; flex:1;" class="item" src="Bilder/igndeinfahrrad.png"></a>
+        <p class="itemm" style="flex:4;"><b>Radverleih – Tourist Information</b><br>Baden ist eine wunderschöne
+          Kleinstadt, die gut mit dem Fahrrad erkundet werden kann. Borgen Sie sich eines der 4 Citybikes oder 2
+          E-Bikes zu den Öffnungszeiten (Mo-Sa, 9-18h, So,
+          Fei 9-15h, ab Oktober: Mo-Fr 9-17h, Sa, So, Fei) geschlossen bei der Tourist Info am Brusattiplatz 3 aus und
+          genießen Sie eine entspannende Zeit in Baden.
+        </p>
+        <p class="item" style="flex:2;"><br>Adresse: Brusattiplatz 3,<br>2500 Baden<br>
+          Telefon: 02252/86800-600<br>
+          E-Mail: info@baden.at<br></p>
+      </div>
+
+      <div class="content_container">
+        <img style="max-width: 200px; max-height: 200px; flex:1;" class="item" src="Bilder/igndeinfahrrad.png"></a>
+        <p class="itemm" style="flex:4;"><b>Radservicestation bike2train:</b><br>Verleih, Service, Reparatur, Verkauf ,
+          Beratung
+          sowie Auskunft über Radgaragen der ÖBB. Außerhalb der Öffnungszeiten stehen eine Selfservicebox mit
+          Werkzeugen,
+          einer Luftfüllstation, ein Schlauchautomat sowei eine 24-Reparaturannahmebox zur
+          Verfügung. <br>Sommeröffnungszeiten (Mitte April bis Ende September):<br>
+          Montag 15.00 -18.30 Uhr<br>
+          Dienstag bis Freitag 9.30 - 12.00 und 15.00 - 18.30 Uhr<br>
+          Samstag 9.30 - 13. Uhr <br>
+          Winteröffnungszeiten:<br>
+          Montag 15.00 - 18.00 Uhr<br>
+          Dienstag bis Freitag 9.30 - 12.00 und 15.00 - 18.00 Uhr</p>
+        <p class="item" style="flex:2;"><br>Adresse: Conrad von Hötzendorfplatz 1,<br>2500 Baden<br>
+          Telefon: 02252/820751 oder
+          0664/5113737<br></p>
+      </div>
+      <div class="content_container">Fahrradbörse: jedes Jahr, an einem Samstag im Frühling, heuer am 27. April 2019
+        haben Sie
+        die Möglichkeit am Theaterplatz in Baden gebrauchte Fahrräder zu verkaufen und zu kaufen,
+        Kinderräder und Erwachsenenräder. Nützen Sie diese Gelegenheit um Fahrrädern ein zweites
+        Leben zu schenken – weiterverwenden ist die Devise.</div>
+
+      <div class="content_container">
+        <a style="background-color: grey;" target="_blank" rel="noopener noreferrer" href="https://www.cycle-factory.at/"><img
+            style="width: 200px; flex:1; padding-top: 30%;" class="item" src="https://www.cycle-factory.at/wp-content/uploads/2016/02/logo-cyclefactory-white.png"></a>
+        <p class="itemm" style="flex:4;"><b>Cycle Factory</b><br>Die Leibe zum Fahrrad reicht vom Kinderrad bis hin zum
+          Stadt-
+          /Trekkingrad, sowie zu Mountainbikes, Rennräder &amp; E-Bikes, zusätzlich Service und
+          Reparaturen aller Marken und Radtypen. Customräder Aufbau/Umbau nach
+          individuellen Kundenwunsch, sowie Zubehör für Fahrräder, Bekleidung, Pflegemittel
+          &amp; Ersatzteile.</p>
+        <p class="item" style="flex:2;"><br>Adresse: Wienerstraße 13 - 21,<br>2500 Baden <br>
+          Telefon: +43 (0) 2252 263 666<br>
+          E-Mail: baden@cycle-factory.at<br>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.cycle-factory.at/">zur Website</a></p>
+      </div>
+
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.fahrradstudio.at/"><img
+            style="width: 200px; flex:1; padding-top: 30%;" class="item" src="https://www.fahrradstudio.at/sites/default/files/newswire_logo.jpg"></a>
+        <p class="itemm" style="flex:4;"><b>Fahrradstudio</b><br>Anliegen dieses Unternehmens ist die „Familienmobilität&quot; in Österreich. So finden Sie hier von
+          Kinderanhängern über Lastenanhänger bis hin zu Liegerädern eine große Auswahl, um Ihren Alltag mit
+          dem Fahrrad genießen zu können. Die Geschichte dieses Unternehmens begann im Jahr 1987, als einige
+          fahrradbegeisterte Badener Alltagsradfahrer die &quot;Badener Initiative Echter Radfahrer&quot; oder B.I.E.R.
+          gründeten; Ziel ist, als Verein den Radverkehr zu fördern und auf Gemeindeebene Bewusstsein für die
+          Anliegen der Radfahrer zu schaffen.</p>
+        <p class="item" style="flex:2;"><br>Adresse: Jägerhausgasse 20,<br>2500 Baden <br>
+          Telefon: +43 2252 47690<br>
+          E-Mail: info@fahrradstudio.at<br>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.fahrradstudio.at/">zur Website</a></p>
+      </div>
+
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.familybikes.at/"><img
+            style="width: 200px; flex:1; padding-top: 30%;" class="item" src="https://static.wixstatic.com/media/5ffe39_6d6e5cbb066a419cb95123ec66584031~mv2.png/v1/fill/w_214,h_88,al_c,q_80,usm_0.66_1.00_0.01/5ffe39_6d6e5cbb066a419cb95123ec66584031~mv2.webp"></a>
+        <p class="itemm" style="flex:4;"><b>Familybikes</b><br>Lastenfahrräder, eine nachhaltige und trendige Mobilitätsform: Ob Sie
+          Kinder, Hunde oder Lasten transportieren wollen, mit diesen Fahrrädern ist das alles kein
+          Problem. Man kann die Räder auch Probe fahren oder tageweise mieten !!, es gibt
+          verschiedene Modelle und auch Elektrofahrräder. Wege zum Einkaufen oder zum
+          Kindergarten können damit gesund und umweltfreundlich zurückgelegt werden.</p>
+        <p class="item" style="flex:2;"><br>Adresse: Josef Glanner-Gasse 12a,<br>2511 Pfaffstätten<br>
+          Telefon: +43 660 8712461<br>
+          E-Mail: servus@familybikes.at<br>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.familybikes.at/">zur Website</a></p>
+      </div>
+      
+      
+
+    </div>
+
+  </div>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="de-DE">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Nachhaltig in Baden</title>
+  <link href="nachhaltig.css" type="text/css" rel="stylesheet">
+  <meta name="author" content="Florian Chen">
+  <meta name="description" content="Umweltbewusst und regional Einkaufen, Initiativen in Baden, Informationen und TIpps für ein nachhaltiges Leben und alle interessanten Termine dazu.">
+  <link rel="icon" href="https://www.heraldry-wiki.com/heraldrywiki/images/3/3c/Baden.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Start</a>
+    <a href="Essen.html">Essen</a>
+    <div class="dropdown">
+      <button onclick="Technologie()" class="dropbtn">Technologie
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="Technologie" class="dropdown-content">
+        <a href="Energie.html">Energie</a>
+        <a href="Verkehr.html">Verkehr</a>
+        <a href="CO2Komp.html">CO<sub>2</sub> Kompensation</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button style="background-color: white; color: #043927;" onclick="OnlineHandel()" class="dropbtn">Überregional
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="OnlineHandel" class="dropdown-content">
+        <a href="Online-Handel.html">Online Handel</a>
+        <a href="Wolle.html">Wolle</a>
+        <a href="ZeroWaste.html" class="active">Zero Waste</a>
+        <a href="divGesch.html">diverse Geschäfte</a>
+      </div>
+    </div>
+    <a href="Weiterverwenden.html">Weiterverwenden</a>
+    <a href="MonatlichesKochrezept.html">Monatliches Kochrezept</a>
+    <a href="WoechentlicherTipp.html">Wöchentlicher Tipp</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+  </div>
+
+  <script>
+    function Technologie() {
+      document.getElementById("Technologie").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    function OnlineHandel() {
+      document.getElementById("OnlineHandel").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <div style="background-image: url(Bilder/zero_waste.jpg); display: flex; justify-content: center;" class="topcontainer">
+
+    <h1 id="header" style="top:40%;">Zero Waste</h1>
+
+  </div>
+
+  <div class="text_container">
+
+    <div id="text">
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="http://www.der-greissler.at/"><img style="max-width: 200px; flex:1;"
+            class="item" src="https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/13239257_196671937392889_5425806655084287959_n.jpg?_nc_cat=105&_nc_ht=scontent-amt2-1.xx&oh=9608b8d1a75c72e906f473e86fd90b0a&oe=5CD32DC6"></a>
+        <p class="itemm" style="flex:4;"><b>Der Greißler</b><br>verpackungsfreier Greißlerladen, Alexander Obsieger
+          hat es sich zum Ziel gemacht, in
+          Wiener Gemütlichkeit Produkte bester, regionaler Qualität verpackungsfrei zu
+          verkaufen und damit der Lebensmittelverschwendung entgegen zu wirken. Füllen Sie
+          einfach Ihren Einkauf in eigene Gefäße oder nutzen Sie Pfandgefäße. Wie bei
+          ursprünglichen Greißlern werden nahezu alle Waren in offenen Gebinden angeboten,
+          um den Kunden zu ermöglichen, nur die Mengen an Waren zu nehmen, die sie
+          wirklich benötigen.</p>
+        <p class="item" style="flex:2;"><br>Adresse: Albertgasse 19,<br>1080 Wien <br>
+          Telefon: 0677 6161 54 20 <br>
+          E-Mail: post@der-greissler.at<br>
+          <a target="_blank" rel="noopener noreferrer" href="http://www.der-greissler.at/">zur Website</a></p>
+      </div>
+
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="http://mass-greisslerei.at/start"><img style="max-width: 200px; flex:1;"
+            class="item" src="Bilder/lunzers-logo.png"></a>
+        <p class="itemm" style="flex:4;"><b>Lunzers Maßgreißlerei</b><br>Alle
+          Lebensmittel in der Maß-Greißlerei stammen aus biologischem Anbau, von regionalen
+          Landwirten und kleinen Produzenten, die das Team der Mass-Greißlerei alle persönlich
+          kennt. Die Produkte sind saisonal und werden unverpackt abgegeben . Zusätzlich gibt es
+          im Pfandglas gekühlte Bio-Gerichte von Iss mich! für zuhause, eine Auswahl an Non-Food-
+          Artikeln sowie ökologische Reinigungsmittel von Uni Sapon aus Vorarlberg.</p>
+        <p class="item" style="flex:2;"><br>Adresse: Heinestraße 35,<br>1020 Wien <br>
+          Telefon: 01 2121387<br>
+          E-Mail: info@mass-greisslerei.at<br>
+          <a target="_blank" rel="noopener noreferrer" href="http://mass-greisslerei.at/start">zur Website</a></p>
+      </div>
+
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="https://lieberohne.at/"><img style="max-width: 200px;flex:1;"
+            class="item" src="https://lieberohne.at/wp-content/uploads/2017/11/logo_lieberohne.png"></a>
+        <p class="itemm" style="flex:4;"><b>Lieber Ohne</b><br>Markus und Claudia betreiben einen Bio unverpackt
+          Laden mit Küche. Sie finden
+          hier regionale Bio Lebensmittel und andere ökologisch wertvolle Produkte großteils lose, unverpackt
+          oder in Pfandbehältern ,Gemüse und Obst, Fleisch- und Wurstwaren, Milchprodukte, Getreide,
+          Cerealien, Nüsse, Samen, Mehle, Süßes, Gewürze, Tees usw.
+          Und zusätzlich gibt es köstliche Tagesmenüs, oft vegan, sowie bereits den ersten Kochkurs von
+          Claudia.</p>
+        <p class="item" style="flex:2;"><br>Adresse: Otto Bauergasse 10,<br>1060 Wien <br>
+          Telefon: +43 1 3750064<br>
+          E-Mail: markus@lieberohne.at<br>
+          <a target="_blank" rel="noopener noreferrer" href="https://lieberohne.at/">zur Website</a></p>
+      </div>
+
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.warenhandlung.at/de/news/"><img style="max-width: 200px; flex:1;"
+            class="item" src="https://www.warenhandlung.at/resources/warenhandlung/images/Warenhandlung.svg"></a>
+        <p class="itemm" style="flex:4;"><b>Warenhandlung</b><br>Die beiden Schwestern Christiane Wenighofer-Wanits
+          und Stephanie Wanits
+          sehen in der Warenhandlung den Ausdruck ihrer Leidenschaft für gesunde
+          Ernährung, gelebtes Umweltbewusstsein und einfach schönes Design. Sie
+          führen ausschließlich Produkte, die sie in vielen Jahren der Suche und des
+          Ausprobierens kennen und schätzen gelernt haben; Produkte, die sie selbst
+          gern kaufen würden. Alles aus der Region, je nachdem, was die Natur
+          entsprechend der Saison gerade zur Verfügung stellt. Produziert von
+          Landwirten und kleinen handwerklichen Betrieben, mit hohen Wert auf
+          Qualität. Und all das mit einem Minimum an Verpackung.</p>
+        <p class="item" style="flex:2;"><br>Adresse: Marxergasse 13, <br>1030 Wien <br>
+          Telefon: 01 2864095<br>
+          E-Mail: info@warenhandlung.at <br>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.warenhandlung.at/de/news/">zur Website</a></p>
+      </div>
+
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="https://xn--fllbar-3ya.at/"><img style="max-width: 200px;"
+            class="item" style="flex:1;" src="Bilder/füllbar.png"></a>
+        <p class="itemm" style="flex:4;"><b>Füllbar</b><br>ökologische Wasch- und
+          Putzmittel. Heidi Haas bietet Naturkraft statt chemischer Keule. Ihre Ziele sind die
+          Verwendung von ökologischen, umweltfreundlichen Produkten und die Verbreitung des
+          Nachfüllgedankens. Die Produkte zeichnen sich durch 100% natürliche Rohstoffe, keine
+          Konservierungsstoffe, keine synthetischen Farb- und Duftstoffe usw. aus</p>
+        <p class="item" style="flex:2;"><br>Adresse: Lerchenfelderstr. 55, <br>1070 Wien <br>
+          Telefon: +43 650 68 68 602<br>
+          E-Mail: interessiert@fuellbar.at <br>
+          <a target="_blank" rel="noopener noreferrer" href="https://xn--fllbar-3ya.at/">zur Website</a></p>
+      </div>
+
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="http://schmeckerei.at/"><img style="max-width: 200px;" class="item" style="flex:1;"
+            src="Bilder/schmeckerei.png"></a>
+        <p class="itemm" style="flex:4;"><b>Schmeckerei</b><br>Info folgt</p>
+        <p class="item" style="flex:2;"><br>Adresse: Ungargasse 17, <br>2700 Wiener Neustadt<br>
+          Telefon: 0676 9474188<br>
+          <a target="_blank" rel="noopener noreferrer" href="http://schmeckerei.at/">zur Website</a></p>
+      </div>
+      <div class="content_container">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.beeofix.at/"><img style="max-width: 200px;"
+          class="item" style="flex:1;" src="https://image.jimcdn.com/app/cms/image/transf/dimension=280x10000:format=png/path/s3f2f24834f547d47/image/ibead1d73be596147/version/1515677816/image.png"></a>
+        <p class="itemm" style="flex:4;"><b>Beeofix</b><br>Christa Rohringer hat mit Beeofix eine wiederverwendbare
+          und
+          ressourcenschonende Alternative zu Alu- und Plastikfolien entwickelt. Im Mostviertel
+          aus upgecycelten Baumwollstoffen, regionalem Bio-Bienenwachs, Bio-Jojobaöl und
+          Baumharz handgefertigt, eignet sich diese Decke als Verschluß für Schüsseln oder
+          Becher. Dank der Wärme deiner Hände passt sich Beeofix jeder Form an, verschließt
+          atmungsaktiv, ist hübsch und viele Male wiederverwendbar. Erhältlich im Weltladen
+          Baden oder online.</p>
+        <p class="item" style="flex:2;"><br>Adresse: Ybbsitzer Straße 50, <br>3340 Waidhofen an der Ybbs<br>
+          Telefon: 0676 9407500<br>E-Mail: office@beeofix.at<br>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.beeofix.at/">zur Website</a></p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+
+</html>
