@@ -14,69 +14,39 @@
 
   <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script src="functions.js"></script>
 
 </head>
 
 <body>
 
-  <div class="topnav" id="myTopnav">
-    <a href="index.html" class="active">Start</a>
-    <a href="MonatlichesKochrezept.html">Monatliches Kochrezept</a>
-    <a href="WoechentlicherTipp.html">Wöchentlicher Tipp</a>
-    <a href="Essen.html">Essen</a>
-    <div class="dropdown">
-      <button onclick="Technologie()" class="dropbtn">Technologie
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div id="Technologie" class="dropdown-content">
-        <a href="Energie.html">Energie</a>
-        <a href="Verkehr.html">Verkehr</a>
-        <a href="CO2Komp.html">CO<sub>2</sub> Kompensation</a>
-      </div>
+  <nav id="navMenu"></nav>
+
+  <div class="container">
+
+    <h1 id="header">Nachhaltig in Baden</h1>
+
+
+    <div id="text">
+      <p><b>Herzlich Willkommen</b> bei „Nachhaltig in Baden“</p>
+      <p>Wir möchten gerne nachhaltig leben, aber wie? Mit dieser Seite wollen wir Euch die Möglichkeit
+        geben, konkrete zusätzliche Möglichkeiten für einen nachhaltigen Lebensstil zu finden und/oder uns
+        eure Vorschläge mitzuteilen unter @, wir freuen uns, wenn diese Seite durch Euer Engagement
+        weiterwächst.</p>
+      <p>Fasziniert von der tollen Seite <a target="_blank" rel="noopener noreferrer" href="https://nachhaltig-in-graz.at/">
+          "Nachhaltig in Graz"</a> wollen wir die Idee
+        weitertragen nach Baden, genauso wie es sie ja schon als <a target="_blank" rel="noopener noreferrer" href="https://www.nachhaltig-im-burgenland.at/">
+          "Nachhaltig im Burgenland"</a>
+        ins Burgenland getragen wurde.</p>
+      <p>Da wir diese Seite neben Beruf bzw. Schule machen, bitten wir um euer Verständnis, wenn sie
+        langsam wächst.
+        Aber der Anfang ist getan, und mit jedem Schritt wird sie schöner und vielfältiger werden.</p>
     </div>
-    <div class="dropdown">
-      <button onclick="OnlineHandel()" class="dropbtn">Überregional
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div id="OnlineHandel" class="dropdown-content">
-        <a href="Online-Handel.html">Online Handel</a>
-        <a href="Wolle.html">Wolle</a>
-        <a href="ZeroWaste.html">Zero Waste</a>
-        <a href="divGesch.html">diverse Geschäfte</a>
-      </div>
-    </div>
-    <a href="Weiterverwenden.html">Weiterverwenden</a>
-
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
 
   </div>
 
-  <div class="container"></div>
 
-  <h1 id="header">Nachhaltig in Baden</h1>
-
-  <div id="text">
-    <p><b>Herzlich Willkommen</b> bei „Nachhaltig in Baden“</p>
-    <p>Wir möchten gerne nachhaltig leben, aber wie? Mit dieser Seite wollen wir Euch die Möglichkeit
-      geben, konkrete zusätzliche Möglichkeiten für einen nachhaltigen Lebensstil zu finden und/oder uns
-      eure Vorschläge mitzuteilen unter @, wir freuen uns, wenn diese Seite durch Euer Engagement
-      weiterwächst.</p>
-    <p>Fasziniert von der tollen Seite <a target="_blank" rel="noopener noreferrer" href="https://nachhaltig-in-graz.at/">
-        "Nachhaltig in Graz"</a> wollen wir die Idee
-      weitertragen nach Baden, genauso wie es sie ja schon als <a target="_blank" rel="noopener noreferrer" href="https://www.nachhaltig-im-burgenland.at/">
-        "Nachhaltig im Burgenland"</a>
-      ins Burgenland getragen wurde.</p>
-    <p>Da wir diese Seite neben Beruf bzw. Schule machen, bitten wir um euer Verständnis, wenn sie
-      langsam wächst.
-      Aber der Anfang ist getan, und mit jedem Schritt wird sie schöner und vielfältiger werden.</p>
-
-
-  </div>
-  </div>
-
+  <script src="functions.js"></script>
+  <script>setActive("navStart")</script>
 </body>
 
 

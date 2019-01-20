@@ -14,123 +14,50 @@
 
   <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script src="functions.js"></script>
 </head>
 
+<body>
+  <nav id="navMenu"></nav>
 
-<div class="topnav" id="myTopnav">
-  <a href="index.html">Start</a>
-  <a href="MonatlichesKochrezept.html" class="active">Monatliches Kochrezept</a>
-  <a href="WoechentlicherTipp.html">Wöchentlicher Tipp</a>
-  <a href="Essen.html">Essen</a>
-  <div class="dropdown">
-    <button onclick="Technologie()" class="dropbtn">Technologie
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div id="Technologie" class="dropdown-content">
-      <a href="Energie.html">Energie</a>
-      <a href="Verkehr.html">Verkehr</a>
-      <a href="CO2Komp.html">CO<sub>2</sub> Kompensation</a>
+  <div class="container">
+
+    <h1 id="header">Monatliches Kochrezept</h1>
+
+    <div id="text">
+      <p>Regional, saisonal, genial: Unser herzlicher Dank geht an Nicole Seiler von
+        der <a target="_blank" rel="noopener noreferrer" href="http://www.flotte-lotte.at/"> flotten Lotte</a>, die uns
+        hier regelmäßig köstliche, nachhaltige Rezepte bringt.
+        Geheimtipp ;): Ihre Kochkurse sind wirklich ein tolles Erlebnis (oder nachhaltiges Geschenk für
+        Geburtstage etc.)</p>
+
+      <h2>Süßkartoffelpüree mit Pesto-Kotelette</h2>
+
+      <img id="pic" src="http://www.flotte-lotte.at/wp-content/uploads/s%C3%BC%C3%9Fkartoffelp%C3%BCree-300x250.jpg"
+        alt="Italian Trulli">
+
+      <p><b>Zutaten:</b></p>
+      <div id="mon">
+        <ul>
+          <li>4 Süßkartoffeln</li>
+          <li>1/2 bis 3/4 Sellerieknoten</li>
+          <li>250-500 ml Schlagobers</li>
+          <li>Muskat, Salz, Pfeffer</li>
+          <li>4 Kotelettes</li>
+          <li> grünes Pesto</li>
+          <li>Öl</li>
+        </ul>
+      </div>
+      <p><b>Zubereitung:</b><br>Kartoffeln und Sellerie schälen und würfeln. Ca. 20 min im Dampf garen. Dann mit den
+        restlichen
+        Zutaten pürieren.</p>
+      <p>Kotelettes mit Salz und Pfeffer beidseitig würzen. In etwas Öl einseitig anbraten, umdrehen und
+        die fertige Seite mit Pesto bestreichen. 2 min fertig garen und zum Püree servieren.</p>
+
     </div>
   </div>
-  <div class="dropdown">
-    <button onclick="OnlineHandel()" class="dropbtn">Überregional
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div id="OnlineHandel" class="dropdown-content">
-      <a href="Online-Handel.html">Online Handel</a>
-      <a href="Wolle.html">Wolle</a>
-      <a href="ZeroWaste.html">Zero Waste</a>
-      <a href="divGesch.html">diverse Geschäfte</a>
-    </div>
-  </div>
-  <a href="Weiterverwenden.html">Weiterverwenden</a>
 
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-
-</div>
-
-<script>
-  function Technologie() {
-    document.getElementById("Technologie").classList.toggle("show");
-  }
-
-  window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-  function OnlineHandel() {
-    document.getElementById("OnlineHandel").classList.toggle("show");
-  }
-
-  window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-</script>
-
-
-<div class="container">
-
-  <h1 id="header">Monatliches Kochrezept</h1>
-
-  <div id="text">
-    <p>Regional, saisonal, genial: Unser herzlicher Dank geht an Nicole Seiler von
-      der <a target="_blank" rel="noopener noreferrer" href="http://www.flotte-lotte.at/"> flotten Lotte</a>, die uns
-      hier regelmäßig köstliche, nachhaltige Rezepte bringt.
-      Geheimtipp ;): Ihre Kochkurse sind wirklich ein tolles Erlebnis (oder nachhaltiges Geschenk für
-      Geburtstage etc.)</p>
-
-    <h2>Süßkartoffelpüree mit Pesto-Kotelette</h2>
-
-    <img id="pic" src="http://www.flotte-lotte.at/wp-content/uploads/s%C3%BC%C3%9Fkartoffelp%C3%BCree-300x250.jpg" alt="Italian Trulli">
-
-    <p><b>Zutaten:</b></p>
-    <div id="mon">
-      <ul>
-        <li>4 Süßkartoffeln</li>
-        <li>1/2 bis 3/4 Sellerieknoten</li>
-        <li>250-500 ml Schlagobers</li>
-        <li>Muskat, Salz, Pfeffer</li>
-        <li>4 Kotelettes</li>
-        <li> grünes Pesto</li>
-        <li>Öl</li>
-      </ul>
-    </div>
-    <p><b>Zubereitung:</b><br>Kartoffeln und Sellerie schälen und würfeln. Ca. 20 min im Dampf garen. Dann mit den
-      restlichen
-      Zutaten pürieren.</p>
-    <p>Kotelettes mit Salz und Pfeffer beidseitig würzen. In etwas Öl einseitig anbraten, umdrehen und
-      die fertige Seite mit Pesto bestreichen. 2 min fertig garen und zum Püree servieren.</p>
-
-  </div>
-</div>
+  <script src="functions.js"></script>
+  <script>setActive("navCook")</script>
 </body>
 
 

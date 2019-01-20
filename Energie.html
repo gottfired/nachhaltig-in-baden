@@ -16,87 +16,12 @@
   <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script src="functions.js"></script>
 </head>
 
 
 <body>
 
-  <div class="topnav" id="myTopnav">
-    <a href="index.html">Start</a>
-    <a href="Essen.html">Essen</a>
-    <div class="dropdown">
-      <button style="background-color: white; color: #043927;" onclick="Technologie()" class="dropbtn">Technologie
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div id="Technologie" class="dropdown-content">
-        <a href="Energie.html" class="active">Energie</a>
-        <a href="Verkehr.html">Verkehr</a>
-        <a href="CO2Komp.html">CO<sub>2</sub> Kompensation</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button onclick="OnlineHandel()" class="dropbtn">Überregional
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div id="OnlineHandel" class="dropdown-content">
-        <a href="Online-Handel.html">Online Handel</a>
-        <a href="Wolle.html">Wolle</a>
-        <a href="ZeroWaste.html">Zero Waste</a>
-        <a href="divGesch.html">diverse Geschäfte</a>
-      </div>
-    </div>
-    <a href="Weiterverwenden.html">Weiterverwenden</a>
-    <a href="MonatlichesKochrezept.html">Monatliches Kochrezept</a>
-    <a href="WoechentlicherTipp.html">Wöchentlicher Tipp</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-
-  </div>
-
-  <script>
-    function Technologie() {
-      document.getElementById("Technologie").classList.toggle("show");
-    }
-
-    window.onclick = function (event) {
-      if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-    function OnlineHandel() {
-      document.getElementById("OnlineHandel").classList.toggle("show");
-    }
-
-    window.onclick = function (event) {
-      if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
+  <nav id="navMenu"></nav>
 
   <div style="background-image: url(bilder/Energie.jpg); background-position: bottom; display: flex; justify-content: center;"
     class="topcontainer">
@@ -156,6 +81,8 @@
 
   </div>
 
+  <script src="functions.js"></script>
+  <script>setActive("navEnergy")</script>
 </body>
 
 
