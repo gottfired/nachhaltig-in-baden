@@ -49,19 +49,14 @@ li{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size:6vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
 
-#header{
-    margin: 0;
+    font-size:6vw;
     font-family: 'Open Sans', sans-serif;
-    color:white;
-    position:absolute;    
     text-align: center;
+    color:white;
 }
 
 
@@ -83,19 +78,20 @@ li{
   text-decoration: none;
   font-size: 17px;
   white-space: nowrap;
+
+  -webkit-transition: opacity .5s, background .5s, color .5s;
+  -moz-transition: opacity .5s, background .5s, color .5s;
+  -o-transition: opacity .5s, background .5s, color .5s;
+  transition: opacity .5s, background .5s, color .5s;
 }
 
-.topnav a {
-    -webkit-transition: opacity .5s, background .5s, color .5s;
-    -moz-transition: opacity .5s, background .5s, color .5s;
-    -o-transition: opacity .5s, background .5s, color .5s;
-}
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: white;
   color: #043927;
 }
+
 .dropdown {
   float: left;
   overflow: hidden;
@@ -103,18 +99,19 @@ li{
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  cursor: pointer;
-  font-size: 17px; 
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: #043927;
-  font-family: inherit; 
-  margin: 0; 
-  -webkit-transition: opacity .5s, background .5s, color .5s;
+    cursor: pointer;
+    font-size: 17px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: #043927;
+    font-family: inherit; 
+    margin: 0; 
+    -webkit-transition: opacity .5s, background .5s, color .5s;
     -moz-transition: opacity .5s, background .5s, color .5s;
     -o-transition: opacity .5s, background .5s, color .5s;
+    transition: opacity .5s, background .5s, color .5s;
 }
 .dropdown-content {
   display: none;
@@ -153,6 +150,13 @@ li{
   display: none;
 }
 
+
+.break-word {
+    hyphens: auto;
+}
+
+
+/* Valid only for desktop */
 @media screen and (min-width: 1000px) {
   .topnav {
     display: flex;
@@ -161,7 +165,11 @@ li{
 }
 
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/* 
+Valid only for mobile. 
+The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
+This class makes the topnav look good on small screens (display the links vertically instead of horizontally) 
+*/
 @media screen and (max-width: 1000px) {
     .content_container{
         flex-direction: column;
@@ -174,59 +182,43 @@ li{
         margin: 0px 20px;
     }
     body {
-    padding-top: 0px;
+        padding-top: 0px;
     }
     .topnav {
-    position: fixed;
+        position: fixed;
     }
     .topnav a {
-    display: block;
-    text-align: left;
+        display: block;
+        text-align: left;
     }
     .topnav a:not(:first-child) {
-    display: none;
+        display: none;
     }
     .topnav .dropdown {
-    display: none; 
+        display: none; 
     }
-  .topnav a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: block;
-  }
-  #header{
-      font-size: 120px;
-  }
-    
-  /* .topnav.responsive {
-    position: relative;
-  } */
-  .topnav.responsive a {
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {
-    display: block;
-    float: inherit
-    
-  }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-    .break-word {
-        hyphens: auto;
+    .topnav a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
     }
-
-    .active:link{
-        background-color: #043927; 
-        color: white;
-    }
+  
+    /* .topnav.responsive {
+        position: relative;
+    } */
     
-     .active:visited{
-        background-color: #043927; 
-        color: white;
+    .topnav.responsive a {
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive .dropdown {
+        display: block;
+        float: inherit
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 }
