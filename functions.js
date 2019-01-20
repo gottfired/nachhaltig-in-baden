@@ -27,6 +27,10 @@ function OnlineHandel() {
     document.getElementById("OnlineHandel").classList.toggle("show");
 }
 
+function onDropDownFood() {
+    clearDropDowns();
+    document.getElementById("dropDownFood").classList.toggle("show");
+}
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -41,9 +45,22 @@ function myFunction() {
 document.getElementById("navMenu").innerHTML = `
   <div class="topnav" id="myTopnav">
     <a id="navStart" href="index.html">Start</a>
-    <a id="navCook" href="MonatlichesKochrezept.html">Monatliches Kochrezept</a>
-    <a id="navWeekly" href="WoechentlicherTipp.html">Wöchentlicher Tipp</a>
-    <a id="navFood" href="Essen.html">Essen</a>
+    <a id="navUsefulInfo" href="useful-info.html">Wissenswertes</a>
+    <a id="navGardening" href="gardening.html">Gärtnern</a>
+    
+    
+    <div class="dropdown">
+        <button onclick="onDropDownFood()" class="dropbtn">
+            Essen
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="dropDownFood" class="dropdown-content">
+            <a id="navFoodRestaurants" href="food-restaurants.html">Restaurants</a>
+            <a id="navFoodShops" href="food-shops.html">Geschäfte</a>
+        </div>
+    </div>
+
+
     <div class="dropdown">
       <button onclick="Technologie()" class="dropbtn">Technologie
         <i class="fa fa-caret-down"></i>
@@ -54,6 +71,7 @@ document.getElementById("navMenu").innerHTML = `
         <a id="navCo2" href="CO2Komp.html">CO<sub>2</sub> Kompensation</a>
       </div>
     </div>
+
     <div class="dropdown">
       <button onclick="OnlineHandel()" class="dropbtn">Überregional
         <i class="fa fa-caret-down"></i>
