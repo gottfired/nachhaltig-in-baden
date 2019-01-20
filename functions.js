@@ -16,9 +16,9 @@ window.onclick = function (event) {
     }
 }
 
-function Technologie() {
+function onKnowledge() {
     clearDropDowns();
-    document.getElementById("Technologie").classList.toggle("show");
+    document.getElementById("knowledge").classList.toggle("show");
 }
 
 
@@ -45,14 +45,14 @@ function myFunction() {
 document.getElementById("navMenu").innerHTML = `
   <div class="topnav" id="myTopnav">
     <a id="navStart" href="index.html">Start</a>
-    <a id="navUsefulInfo" href="useful-info.html">Wissenswertes</a>
     <a id="navGardening" href="gardening.html">Gärtnern</a>
+    <a id="navClothing" href="clothing.html">Kleidung</a>
     
     
     <div class="dropdown">
         <button onclick="onDropDownFood()" class="dropbtn">
             Essen
-            <i class="fa fa-caret-down"></i>
+            <span class="fa fa-caret-down" style="pointer-events:none;"></span>
         </button>
         <div id="dropDownFood" class="dropdown-content">
             <a id="navFoodRestaurants" href="food-restaurants.html">Restaurants</a>
@@ -60,21 +60,26 @@ document.getElementById("navMenu").innerHTML = `
         </div>
     </div>
 
+    <a id="navReuse" href="Weiterverwenden.html">Weiterverwenden</a>
 
     <div class="dropdown">
-      <button onclick="Technologie()" class="dropbtn">Technologie
-        <i class="fa fa-caret-down"></i>
+      <button onclick="onKnowledge()" class="dropbtn">
+        Wissenswertes
+        <span class="fa fa-caret-down" style="pointer-events:none;"></span>
       </button>
-      <div id="Technologie" class="dropdown-content">
+      <div id="knowledge" class="dropdown-content">
+        <a id="navUsefulInfo" href="useful-info.html">Tipps</a>
         <a id="navEnergy" href="Energie.html">Energie</a>
         <a id="navTraffic" href="Verkehr.html">Verkehr</a>
         <a id="navCo2" href="CO2Komp.html">CO<sub>2</sub> Kompensation</a>
+        <a id="navCalendar" href="calendar.html">Kalender</a>
       </div>
     </div>
 
     <div class="dropdown">
-      <button onclick="OnlineHandel()" class="dropbtn">Überregional
-        <i class="fa fa-caret-down"></i>
+      <button onclick="OnlineHandel()" class="dropbtn">
+        Überregional
+        <span class="fa fa-caret-down" style="pointer-events:none;"></span>
       </button>
       <div id="OnlineHandel" class="dropdown-content">
         <a id="navOnlineShopping" href="Online-Handel.html">Online Handel</a>
@@ -83,7 +88,6 @@ document.getElementById("navMenu").innerHTML = `
         <a id="navMiscShopping" href="divGesch.html">Diverse Geschäfte</a>
       </div>
     </div>
-    <a id="navReuse" href="Weiterverwenden.html">Weiterverwenden</a>
 
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
