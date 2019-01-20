@@ -15,9 +15,9 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="functions.js"></script>
 </head>
 
 <body>
@@ -55,48 +55,6 @@
 
   </div>
 
-  <script>
-    function Technologie() {
-      document.getElementById("Technologie").classList.toggle("show");
-    }
-
-    window.onclick = function (event) {
-      if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-    function OnlineHandel() {
-      document.getElementById("OnlineHandel").classList.toggle("show");
-    }
-
-    window.onclick = function (event) {
-      if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
 
   <div style="background-image: url(bilder/zero_waste.jpg); display: flex; justify-content: center;" class="topcontainer">
 
@@ -189,8 +147,8 @@
       </div>
 
       <div class="content_container">
-        <a target="_blank" rel="noopener noreferrer" href="http://schmeckerei.at/"><img style="max-width: 200px;" class="item" style="flex:1;"
-            src="bilder/schmeckerei.png"></a>
+        <a target="_blank" rel="noopener noreferrer" href="http://schmeckerei.at/"><img style="max-width: 200px;" class="item"
+            style="flex:1;" src="bilder/schmeckerei.png"></a>
         <p class="itemm" style="flex:4;"><b>Schmeckerei</b><br>Info folgt</p>
         <p class="item" style="flex:2;"><br>Adresse: Ungargasse 17, <br>2700 Wiener Neustadt<br>
           Telefon: 0676 9474188<br>
@@ -198,7 +156,7 @@
       </div>
       <div class="content_container">
         <a target="_blank" rel="noopener noreferrer" href="https://www.beeofix.at/"><img style="max-width: 200px;"
-          class="item" style="flex:1;" src="https://image.jimcdn.com/app/cms/image/transf/dimension=280x10000:format=png/path/s3f2f24834f547d47/image/ibead1d73be596147/version/1515677816/image.png"></a>
+            class="item" style="flex:1;" src="https://image.jimcdn.com/app/cms/image/transf/dimension=280x10000:format=png/path/s3f2f24834f547d47/image/ibead1d73be596147/version/1515677816/image.png"></a>
         <p class="itemm" style="flex:4;"><b>Beeofix</b><br>Christa Rohringer hat mit Beeofix eine wiederverwendbare
           und
           ressourcenschonende Alternative zu Alu- und Plastikfolien entwickelt. Im Mostviertel
