@@ -1,8 +1,8 @@
 .text_container {
     margin:0 auto;
     max-width: 1300px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 html, body {
@@ -216,9 +216,9 @@ li{
     top: 0;
   }
     .break-word {
-        word-break: break-all;
+        hyphens: auto;
     }
-    
+
     .active:link{
         background-color: #043927; 
         color: white;
