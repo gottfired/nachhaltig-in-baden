@@ -205,6 +205,14 @@ This class makes the topnav look good on small screens (display the links vertic
         top: 0;
         display: block;
     }
+    .active:link {
+        color: white;
+        background-color: #043927;
+    }
+    .active:visited {
+        color: white;
+        background-color: #043927;
+    }
   
     /* .topnav.responsive {
         position: relative;
