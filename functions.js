@@ -55,8 +55,8 @@ document.getElementById("navMenu").innerHTML = `
             <span class="fa fa-caret-down" style="pointer-events:none;"></span>
         </button>
         <div id="dropDownFood" class="dropdown-content">
-            <a id="navFoodRestaurants" href="food-restaurants.html">Restaurants</a>
             <a id="navFoodShops" href="food-shops.html">Geschäfte</a>
+            <a id="navFoodRestaurants" href="food-restaurants.html">Restaurants</a>
         </div>
     </div>
 
