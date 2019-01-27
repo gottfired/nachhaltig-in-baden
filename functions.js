@@ -85,7 +85,6 @@ document.getElementById("navMenu").innerHTML = `
         <a id="navOnlineShopping" href="Online-Handel.html">Online Handel</a>
         <a id="navWool" href="Wolle.html">Wolle</a>
         <a id="navZeroWaste" href="ZeroWaste.html">Zero Waste</a>
-        <a id="navMiscShopping" href="divGesch.html">Diverse Geschäfte</a>
       </div>
     </div>
 
