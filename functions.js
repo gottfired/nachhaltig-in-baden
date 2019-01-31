@@ -61,6 +61,7 @@ document.getElementById("navMenu").innerHTML = `
         <div id="dropDownFood" class="dropdown-content food">
             <a id="navFoodShops" href="food-shops.html">Geschäfte</a>
             <a id="navFoodRestaurants" href="food-restaurants.html">Restaurants</a>
+            <a id="navRecipe" href="recipe.html">Kochrezepte</a>
         </div>
     </div>
 
