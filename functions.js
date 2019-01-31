@@ -1,46 +1,50 @@
+var x = window.matchMedia("(max-width: 1000px)")
+outer(x) // Call listener function at run time
+x.addListener(outer)
 
-function clearDropDowns() {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
+function outer(x) {
+    if (x.matches) {
+        function clearDropDowns(current) {
+            var dropdowns = document.querySelectorAll(`div.dropdown-content:not(.${current})`);
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                clearDropDowns();
+            }
+        }
+        this.onKnowledge = function() {
+            clearDropDowns("knowledge");
+            document.getElementById("knowledge").classList.toggle("show");
+        }
+
+        this.OnlineHandel = function(){
+            clearDropDowns("onlineHandel");
+            document.getElementById("OnlineHandel").classList.toggle("show");
+        }
+        this.onDropDownFood = function(){
+            clearDropDowns("food");
+            document.getElementById("dropDownFood").classList.toggle("show");
+        }
+        this.toggleDropdown = function()
+         {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
     }
 }
-
-window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-        clearDropDowns();
-    }
-}
-
-function onKnowledge() {
-    clearDropDowns();
-    document.getElementById("knowledge").classList.toggle("show");
-}
-
-
-function OnlineHandel() {
-    clearDropDowns();
-    document.getElementById("OnlineHandel").classList.toggle("show");
-}
-
-function onDropDownFood() {
-    clearDropDowns();
-    document.getElementById("dropDownFood").classList.toggle("show");
-}
-
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-
 
 document.getElementById("navMenu").innerHTML = `
   <div class="topnav" id="myTopnav">
@@ -54,7 +58,7 @@ document.getElementById("navMenu").innerHTML = `
             Essen
             <span class="fa fa-caret-down" style="pointer-events:none;"></span>
         </button>
-        <div id="dropDownFood" class="dropdown-content">
+        <div id="dropDownFood" class="dropdown-content food">
             <a id="navFoodShops" href="food-shops.html">Geschäfte</a>
             <a id="navFoodRestaurants" href="food-restaurants.html">Restaurants</a>
         </div>
@@ -63,11 +67,11 @@ document.getElementById("navMenu").innerHTML = `
     <a id="navReuse" href="Weiterverwenden.html">Weiterverwenden</a>
 
     <div class="dropdown">
-      <button onclick="onKnowledge()" class="dropbtn">
+      <button onclick="(new outer(x)).onKnowledge();" class="dropbtn">
         Wissenswertes
         <span class="fa fa-caret-down" style="pointer-events:none;"></span>
       </button>
-      <div id="knowledge" class="dropdown-content">
+      <div id="knowledge" class="dropdown-content knowledge">
         <a id="navUsefulInfo" href="useful-info.html">Tipps</a>
         <a id="navEnergy" href="Energie.html">Energie</a>
         <a id="navTraffic" href="Verkehr.html">Verkehr</a>
@@ -81,14 +85,14 @@ document.getElementById("navMenu").innerHTML = `
         Überregional
         <span class="fa fa-caret-down" style="pointer-events:none;"></span>
       </button>
-      <div id="OnlineHandel" class="dropdown-content">
+      <div id="OnlineHandel" class="dropdown-content onlineHandel">
         <a id="navOnlineShopping" href="Online-Handel.html">Online Handel</a>
         <a id="navWool" href="Wolle.html">Wolle</a>
         <a id="navZeroWaste" href="ZeroWaste.html">Zero Waste</a>
       </div>
     </div>
 
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="(new outer(x)).toggleDropdown();">
       <i class="fa fa-bars"></i>
     </a>
 

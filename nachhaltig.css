@@ -68,7 +68,7 @@ li{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #043927; 
+    background-color: #8BAD27; 
     z-index: 100;
 }
 
@@ -91,7 +91,7 @@ li{
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: white;
-  color: #043927;
+  color: #8BAD27;
 }
 
 .dropdown {
@@ -101,13 +101,13 @@ li{
 
 /* Dropdown button */
 .dropdown .dropbtn {
-    cursor: pointer;
+    cursor: default;
     font-size: 17px; 
     border: none;
     outline: none;
     color: white;
     padding: 14px 16px;
-    background-color: #043927;
+    background-color: #8BAD27;
     font-family: inherit; 
     margin: 0; 
     -webkit-transition: opacity .5s, background .5s, color .5s;
@@ -118,7 +118,7 @@ li{
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #043927;
+  background-color: #8BAD27;
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -132,17 +132,20 @@ li{
   text-align: left;
 }
 .dropdown .dropbtn:hover{
-    color: #043927;
+    color: #8BAD27;
     background-color: white;
 }
 .show {display: block;}
 
+
+
+
 .active:link {
-    color: #043927;
+    color: #8BAD27;
     background-color: white;
 }
 .active:visited {
-    color: #043927;
+    color: #8BAD27;
     background-color: white;
 }
 
@@ -163,7 +166,9 @@ li{
   .topnav {
     display: flex;
     justify-content: center;
+    
   }
+  .dropdown:hover .dropdown-content {display: block;}
 }
 
 
@@ -181,7 +186,7 @@ This class makes the topnav look good on small screens (display the links vertic
         margin: 0px 20px;
     }
     .itemm{
-        margin: 0px 20px;
+        margin: 20px 20px;
     }
     body {
         padding-top: 0px;
@@ -207,11 +212,11 @@ This class makes the topnav look good on small screens (display the links vertic
     }
     .active:link {
         color: white;
-        background-color: #043927;
+        background-color: #8BAD27;
     }
     .active:visited {
         color: white;
-        background-color: #043927;
+        background-color: #8BAD27;
     }
   
     /* .topnav.responsive {
