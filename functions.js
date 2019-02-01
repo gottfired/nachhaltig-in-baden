@@ -98,7 +98,49 @@ document.getElementById("navMenu").innerHTML = `
     </a>
 
   </div>
+  
 `;
+
+document.getElementById("footer").innerHTML = `
+<div class="footer-left">
+  
+  
+<p class="footer-links">
+  <a id="navStart" href="index.html">Home</a>
+  <a id="navStart" href="about_us.html">Über Uns</a>
+  <a id="navStart" href="impressum.html">Impressum</a>
+</p>
+
+</div>
+
+<div class="footer-center">
+
+<div>
+  <i class="fa fa-phone"></i>
+  <p>+43 699 81724716</p>
+</div>
+
+<div>
+  <i class="fa fa-envelope"></i>
+  <p><a href="mailto:heidrun@nachhaltig.at">heidrun@nachhaltig.at</a></p>
+</div>
+
+</div>
+
+<div class="footer-right">
+
+<p class="footer-company-about">
+  <span>Nachhaltig in Baden</span>
+  Umweltbewusst und regional Einkaufen, Initiativen in Baden, Informationen und Tipps für ein nachhaltiges Leben
+  und alle interessanten Termine dazu.
+</p>
+
+
+</div>
+  
+`;
+
+
 
 function setActive(elementId) {
     const element = document.getElementById(elementId);
