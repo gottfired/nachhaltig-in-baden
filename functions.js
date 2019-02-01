@@ -115,10 +115,6 @@ document.getElementById("footer").innerHTML = `
 
 <div class="footer-center">
 
-<div>
-  <i class="fa fa-phone"></i>
-  <p>+43 699 81724716</p>
-</div>
 
 <div>
   <i class="fa fa-envelope"></i>
