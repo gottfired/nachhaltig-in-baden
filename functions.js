@@ -122,7 +122,7 @@ document.getElementById("footer").innerHTML = `
 
 <div>
   <i class="fa fa-envelope"></i>
-  <p><a href="mailto:heidrun@nachhaltig.at">heidrun@nachhaltig.at</a></p>
+  <p><a href="mailto:heidrun@nachhaltig-in-baden.com">heidrun@nachhaltig-in-baden.com</a></p>
 </div>
 
 </div>
