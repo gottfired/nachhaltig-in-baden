@@ -121,8 +121,8 @@ document.getElementById("footer").innerHTML = `
   
 <p class="footer-links">
   <a id="navStart" href="index.html">Home</a>
-  <a id="navStart" href="about_us.html">Über Uns</a>
-  <a id="navStart" href="impressum.html">Impressum</a>
+  <a href="about_us.html">Über uns</a>
+  <a href="impressum.html">Impressum</a>
 </p>
 
 </div>
