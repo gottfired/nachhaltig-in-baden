@@ -133,6 +133,83 @@ li{
       transform: translateY(-5px);
     }
   }
+@font-face {
+    font-family: DinNeuzeitGrotesk;
+    src: url("dinNeuzeit.otf") format("opentype");
+}
+#container1{
+    height: 500px;
+    background-color: #FFF;
+    display: flex;
+    font-family: 'DinNeuzeitGrotesk';
+}
+#container3{
+    height: 500px;
+    background-color: #FFF;
+    display: flex;
+    font-family: 'DinNeuzeitGrotesk';
+}
+#container2{
+    height: 500px; 
+    background-color:rgb(217, 205, 166);
+    display: flex;
+    justify-content: center;
+
+}
+.btn {
+    border: 2px solid #043926;
+    background-color: white;
+    color: #043926;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'DinNeuzeitGrotesk';
+  }
+  #btn1{
+    border-color: #043926;
+    color: #043926;
+    background-color: transparent;
+  }
+  #btn2{
+    z-index: 15;
+    border-color: white;
+    color: white;
+    background-color: transparent;
+  }
+#header2{
+    z-index: 15;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 0;
+    align-self: center;
+}
+#p2{
+    z-index: 15;
+    max-width: 300px;
+    color: white;
+    font-size: 18px;
+}
+
+#header4 {
+    z-index: 15;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 0;
+    align-self: center;
+}
+#p4{
+    z-index: 15;
+    max-width: 300px;
+    color: white;
+    font-size: 18px;
+}
+
+#btn4{
+    z-index: 15;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+}
 
 .item{
     margin: 0 5px;
@@ -157,6 +234,11 @@ li{
 }
 #header{
     font-size:10vw;
+    font-family: 'Kalam', sans-serif;
+    z-index: 10;
+}
+#subheader{
+    font-size: 2.7vw;
     font-family: 'Kalam', sans-serif;
     z-index: 10;
 }
@@ -266,7 +348,29 @@ li{
 .break-word {
     hyphens: auto;
 }
-
+#img1{
+    flex:1; height: 100%; width: 50%;
+}
+#div1{
+    padding: 100px 0 0 150px; 
+    max-width: 400px; 
+    color:#043926;
+}
+#div3{
+    float:right; 
+    padding: 100px 100px 0 20px;
+    max-width: 400px; 
+    position: relative; 
+    color:#043926
+}
+#div11{
+    height: 100%; 
+    width: 50%;
+}
+#div33{
+    height: 100%; 
+    width: 50%;
+}
 
 /* Valid only for desktop */
 @media screen and (min-width: 1000px) {
@@ -285,9 +389,40 @@ The "responsive" class is added to the topnav with JavaScript when the user clic
 This class makes the topnav look good on small screens (display the links vertically instead of horizontally) 
 */
 @media screen and (max-width: 1000px) {
+    #subheader{
+        font-size: 27px;
+    }
+    #img1{
+        width: 100%;
+        max-height: 300px;
+    }
+    #div11{
+        width: 100%;
+        max-height: 300px;
+    }
+    #div33{
+        width: 100%;
+        max-height: 300px;
+    }
+    #div1{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+    #div3{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
     .content_container{
         flex-direction: column;
         margin: 100px 0;
+    }
+    #container1{
+        flex-direction: column-reverse;
+        height: 600px;
+    }
+    #container3{
+        flex-direction: column;
+        height: 600px;
     }
     .item {
         margin: 0px 20px;
