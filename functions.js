@@ -1,3 +1,17 @@
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      } 
+    });
+  });
+
 var x = window.matchMedia("(max-width: 1000px)")
 outer(x) // Call listener function at run time
 x.addListener(outer)
@@ -127,7 +141,7 @@ document.getElementById("footer").innerHTML = `
 
 <p class="footer-company-about">
   <span>Nachhaltig in Baden</span>
-  Umweltbewusst und regional Einkaufen, Initiativen in Baden, Informationen und Tipps für ein nachhaltiges Leben
+  Umweltbewusst und regional einkaufen, Initiativen in Baden, Informationen und Tipps für ein nachhaltiges Leben
   und alle interessanten Termine dazu.
 </p>
 

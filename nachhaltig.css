@@ -53,6 +53,21 @@ li{
     justify-content: space-between;
 }
 
+.ct-btn-scroll {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 500px;
+    z-index: 9;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+  }
+
 .item{
     margin: 0 5px;
 }
@@ -70,7 +85,7 @@ li{
     align-items: center;
 
     font-size:6vw;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Kalam', sans-serif;
     text-align: center;
     color:white;
     padding-left: 60px;
