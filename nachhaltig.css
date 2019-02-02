@@ -37,11 +37,7 @@ li{
     font-size: 24px;
     padding: 25px;
 }
-.parallax{
-    background: transparent;
-    background-color:rgb(217, 205, 166); 
-    
-}
+
 .info{
     z-index: 2;
     position: relative;
@@ -151,15 +147,18 @@ li{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size:6vw;
-    font-family: 'Kalam', sans-serif;
+    justify-content: center;  
+    flex-direction: column;
     text-align: center;
     color:white;
     padding-left: 60px;
     padding-right: 60px;
+    background: transparent; 
+}
+#header{
+    font-size:10vw;
+    font-family: 'Kalam', sans-serif;
+    z-index: 10;
 }
 
 
