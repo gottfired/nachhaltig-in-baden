@@ -30,6 +30,22 @@ li{
 #pic {
     float: right;
 }
+.container{
+    max-width: 900;
+    margin: 0 auto;
+    background: #f9f9f9;
+    font-size: 24px;
+    padding: 25px;
+}
+.parallax{
+    background: transparent;
+    background-color:rgb(217, 205, 166); 
+    
+}
+.info{
+    z-index: 2;
+    position: relative;
+}
 
 .content_container{
     margin: 40px 0;
