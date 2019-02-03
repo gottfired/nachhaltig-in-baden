@@ -12,9 +12,6 @@ $(document).ready(function () {
     });
 });
 
-var x = window.matchMedia("(max-width: 1000px)")
-outer(x) // Call listener function at run time
-x.addListener(outer)
 
 function outer(x) {
     if (x.matches) {
@@ -58,6 +55,11 @@ function outer(x) {
         }
     }
 }
+
+var x = window.matchMedia("(max-width: 1000px)");
+outer(x); // Call listener function at run time
+x.addListener(outer);
+
 
 document.getElementById("navMenu").innerHTML = `
   <div class="topnav" id="myTopnav">
