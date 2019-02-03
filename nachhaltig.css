@@ -399,6 +399,9 @@ The "responsive" class is added to the topnav with JavaScript when the user clic
 This class makes the topnav look good on small screens (display the links vertically instead of horizontally) 
 */
 @media screen and (max-width: 1000px) {
+    #header{
+        font-size:40px;
+    }
     #subheader{
         font-size: 27px;
     }
