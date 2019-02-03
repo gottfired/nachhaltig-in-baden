@@ -355,7 +355,11 @@ li{
     hyphens: auto;
 }
 #img1{
-    flex:1; height: 100%; width: 50%;
+    flex:1; 
+    height: 100%; 
+    width: 50%;
+    background-size: cover;
+    background-position: center;
 }
 #div1{
     padding: 100px 0 0 150px; 
