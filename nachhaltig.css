@@ -175,6 +175,7 @@ li{
     border-color: white;
     color: white;
     background-color: transparent;
+    font-family: 'DinNeuzeitGrotesk';
   }
 #header2{
     z-index: 15;
@@ -182,12 +183,14 @@ li{
     font-size: 50px;
     margin-bottom: 0;
     align-self: center;
+    font-family: 'DinNeuzeitGrotesk';
 }
 #p2{
     z-index: 15;
     max-width: 300px;
     color: white;
     font-size: 18px;
+    font-family: 'DinNeuzeitGrotesk';
 }
 
 #header4 {
@@ -196,12 +199,14 @@ li{
     font-size: 50px;
     margin-bottom: 0;
     align-self: center;
+    font-family: 'DinNeuzeitGrotesk';
 }
 #p4{
     z-index: 15;
     max-width: 300px;
     color: white;
     font-size: 18px;
+    font-family: 'DinNeuzeitGrotesk';
 }
 
 #btn4{
@@ -209,6 +214,7 @@ li{
     color: white;
     background-color: transparent;
     border-color: white;
+    font-family: 'DinNeuzeitGrotesk';
 }
 
 .item{
