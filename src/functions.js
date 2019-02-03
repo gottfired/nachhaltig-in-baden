@@ -1,16 +1,16 @@
-$(document).ready(function(){
-    $("a").on('click', function(event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-          window.location.hash = hash;
-        });
-      } 
+$(document).ready(function () {
+    $("a").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+                window.location.hash = hash;
+            });
+        }
     });
-  });
+});
 
 var x = window.matchMedia("(max-width: 1000px)")
 outer(x) // Call listener function at run time
@@ -35,21 +35,20 @@ function outer(x) {
                 clearDropDowns();
             }
         }
-        this.onKnowledge = function() {
+        this.onKnowledge = function () {
             clearDropDowns("knowledge");
             document.getElementById("knowledge").classList.toggle("show");
         }
 
-        this.OnlineHandel = function(){
+        this.OnlineHandel = function () {
             clearDropDowns("onlineHandel");
             document.getElementById("OnlineHandel").classList.toggle("show");
         }
-        this.onDropDownFood = function(){
+        this.onDropDownFood = function () {
             clearDropDowns("food");
             document.getElementById("dropDownFood").classList.toggle("show");
         }
-        this.toggleDropdown = function()
-         {
+        this.toggleDropdown = function () {
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
                 x.className += " responsive";
@@ -82,7 +81,7 @@ document.getElementById("navMenu").innerHTML = `
     <a id="navReuse" href="Weiterverwenden.html">Weiterverwenden</a>
 
     <div class="dropdown">
-      <button onclick="(new outer(x)).onKnowledge();" class="dropbtn">
+      <button onclick="onKnowledge()" class="dropbtn">
         Wissenswertes
         <span class="fa fa-caret-down" style="pointer-events:none;"></span>
       </button>
