@@ -123,8 +123,8 @@ document.getElementById("footer").innerHTML = `
   
 <p class="footer-links">
   <a id="navStart" href="../index.html">Home</a>
-  <a href="about_us.html">../Über uns</a>
-  <a href="impressum.html">../Impressum</a>
+  <a href="../about_us.html">Über uns</a>
+  <a href="../impressum.html">Impressum</a>
 </p>
 
 </div>
