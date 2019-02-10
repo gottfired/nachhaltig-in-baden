@@ -15,7 +15,8 @@
   <script src="parallax.min.js"></script>
 
   <meta name="author" content="Florian Chen">
-  <meta name="description" content="Umweltbewusst und regional einkaufen, Initiativen in Baden, Informationen und Tipps für ein nachhaltiges Leben und alle interessanten Termine dazu.">
+  <meta name="description"
+    content="Umweltbewusst und regional einkaufen, Initiativen in Baden, Informationen und Tipps für ein nachhaltiges Leben und alle interessanten Termine dazu.">
 
   <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
@@ -30,7 +31,7 @@
 
 <body>
   <nav id="navMenu"></nav>
-
+  <div style="height: 49px;"></div>
   <div style="height: 100%; background-color:rgb(217, 205, 166); " data-parallax="scroll" data-z-index="1"
     data-image-src="bilder/front.jpg" class="topcontainer">
     <h1 id="header" class="break-word">Nach&shy;haltig in Baden</h1>
@@ -41,19 +42,22 @@
   <p style="text-align: right; right: 10px; font-size: 10px; color:#ccc; position:absolute">Foto: Karl Gruber, CC BY-SA
     3.0</p>
 
-  <div id="container1">
-    <div id="img1" style='background-image: url("bilder/hamburger.jpg");'></div>
-    <div id="div11">
-      <div id="div1">
-        <h1>Essen</h1>
-        <p>Der Mensch ist, was er isst. Wie können wir uns gut und bewusst ernähren? Erfahren Sie mehr über regionale
-          Geschäfte, nachhaltige Restaurants und umweltbewusste Kochrezepte.</p>
-        <button onclick="location.href='food-shops.html'" class="btn" id="btn1" style="padding: 10px 12px;">Shops</button>
-        <button onclick="location.href='food-restaurants.html'" class="btn" id="btn1" style="padding: 10px 12px;">Restaurants</button>
-        <button onclick="location.href='recipe.html'" class="btn" id="btn1" style="padding: 10px 12px;">Kochrezepte</button>
+
+
+
+  <div id="container3">
+    <div id="div33">
+      <div id="div3">
+        <h1>News</h1>
+        <p>Hier erfahren Sie immer die aktuellsten Neuigkeiten zum nachhaltigen Leben in Baden und anderswo. Wir
+          berichten über Klimaschutz, Plastikvermeidung und interessante Initiativen.</p>
+        <button onclick="location.href='news.html'" class="btn" id="btn1" style="padding: 10px 12px;">Mehr
+          erfahren</button>
       </div>
     </div>
+    <div id="img1" style="background-image: url('bilder/books.jpg')"></div>
   </div>
+
 
   <div data-parallax="scroll" data-z-index="1" data-image-src="bilder/clothing.jpg" id="container2">
     <div style="display: flex; flex-direction: column; justify-content: center;">
@@ -65,18 +69,21 @@
 
   </div>
 
-  <div id="container3">
-
-    <div id="div33">
-      <div id="div3">
-        <h1>Weiterverwenden</h1>
-        <p>Wiederverwenden statt immer verschwenden :) Teilen macht Freude. Doch wo findet man, was man sucht?
-          Nachhaltig in Baden bietet viele Möglichkeiten um das Gewünschte zu finden.</p>
-        <button onclick="location.href='Weiterverwenden.html'" class="btn" id="btn1" style="padding: 10px 12px;">Mehr
-          erfahren</button>
+  <div id="container1">
+    <div id="img1" style='background-image: url("bilder/hamburger.jpg");'></div>
+    <div id="div11">
+      <div id="div1">
+        <h1>Essen</h1>
+        <p>Der Mensch ist, was er isst. Wie können wir uns gut und bewusst ernähren? Erfahren Sie mehr über regionale
+          Geschäfte, nachhaltige Restaurants und umweltbewusste Kochrezepte.</p>
+        <button onclick="location.href='food-shops.html'" class="btn" id="btn1"
+          style="padding: 10px 12px;">Shops</button>
+        <button onclick="location.href='food-restaurants.html'" class="btn" id="btn1"
+          style="padding: 10px 12px;">Restaurants</button>
+        <button onclick="location.href='recipe.html'" class="btn" id="btn1"
+          style="padding: 10px 12px;">Kochrezepte</button>
       </div>
     </div>
-    <div id="img1" style="background-image: url('bilder/books.jpg')"></div>
   </div>
 
   <div data-parallax="scroll" data-z-index="1" data-image-src="bilder/bicycle.jpg" id="container2">

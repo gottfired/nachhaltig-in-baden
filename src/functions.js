@@ -81,12 +81,13 @@ document.getElementById("navMenu").innerHTML = `
         <span class="fa fa-caret-down" style="pointer-events:none;"></span>
       </button>
       <div id="knowledge" class="dropdown-content knowledge">
-        <a id="navUsefulInfo" href="useful-info.html">Tipps</a>
+        <a id="navUsefulInfo" href="../useful-info.html">Tipps</a>
         <a id="navEnergy" href="Energie.html">Energie</a>
         <a id="navTraffic" href="Verkehr.html">Verkehr</a>
         <a id="navCo2" href="CO2Komp.html">CO<sub>2</sub> Kompensation</a>
         <a id="navCalendar" href="calendar.html">Kalender</a>
         <a id="navInitiativen" href="initiativen.html">Initiativen</a>
+        <a id="navNews" href="news.html">News</a>
       </div>
     </div>
 
