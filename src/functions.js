@@ -62,10 +62,7 @@ function outer(x) {
 document.getElementById("navMenu").innerHTML = `
   <div class="topnav" id="myTopnav">
     <a id="navStart" href="index.html">Start</a>
-    <a id="navGardening" href="gardening.html">Gärtnern</a>
-    <a id="navClothing" href="clothing.html">Kleidung</a>
-    
-    
+
     <div class="dropdown">
         <button onclick="onDropDownFood()" class="dropbtn">
             Essen
@@ -77,8 +74,6 @@ document.getElementById("navMenu").innerHTML = `
             <a id="navRecipe" href="recipe.html">Kochrezepte</a>
         </div>
     </div>
-
-    <a id="navReuse" href="Weiterverwenden.html">Weiterverwenden</a>
 
     <div class="dropdown">
       <button onclick="onKnowledge();" class="dropbtn">
@@ -106,6 +101,12 @@ document.getElementById("navMenu").innerHTML = `
         <a id="navZeroWaste" href="ZeroWaste.html">Zero Waste</a>
       </div>
     </div>
+
+    <a id="navGardening" href="gardening.html">Gärtnern</a>
+
+    <a id="navClothing" href="clothing.html">Kleidung</a>
+    
+    <a id="navReuse" href="Weiterverwenden.html">Weiterverwenden</a>
 
     <a href="javascript:void(0);" class="icon" onclick="(new outer(x)).toggleDropdown();">
       <i class="fa fa-bars"></i>
