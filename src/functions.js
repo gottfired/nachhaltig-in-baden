@@ -61,7 +61,7 @@ function outer(x) {
 
 document.getElementById("navMenu").innerHTML = `
   <div class="topnav" id="myTopnav">
-    <a id="navStart" href="index.html">Start</a>
+    <a id="navStart" href="../index.html">Start</a>
 
     <div class="dropdown">
         <button onclick="onDropDownFood()" class="dropbtn">
@@ -69,9 +69,9 @@ document.getElementById("navMenu").innerHTML = `
             <span class="fa fa-caret-down" style="pointer-events:none;"></span>
         </button>
         <div id="dropDownFood" class="dropdown-content food">
-            <a id="navFoodShops" href="food-shops.html">Geschäfte</a>
-            <a id="navFoodRestaurants" href="food-restaurants.html">Restaurants</a>
-            <a id="navRecipe" href="recipe.html">Kochrezepte</a>
+            <a id="navFoodShops" href="../food-shops.html">Geschäfte</a>
+            <a id="navFoodRestaurants" href="../food-restaurants.html">Restaurants</a>
+            <a id="navRecipe" href="../recipe.html">Kochrezepte</a>
         </div>
     </div>
 
@@ -82,12 +82,12 @@ document.getElementById("navMenu").innerHTML = `
       </button>
       <div id="knowledge" class="dropdown-content knowledge">
         <a id="navUsefulInfo" href="../useful-info.html">Tipps</a>
-        <a id="navEnergy" href="Energie.html">Energie</a>
-        <a id="navTraffic" href="Verkehr.html">Verkehr</a>
-        <a id="navCo2" href="CO2Komp.html">CO<sub>2</sub> Kompensation</a>
-        <a id="navCalendar" href="calendar.html">Kalender</a>
-        <a id="navInitiativen" href="initiativen.html">Initiativen</a>
-        <a id="navNews" href="news.html">News</a>
+        <a id="navEnergy" href="../Energie.html">Energie</a>
+        <a id="navTraffic" href="../Verkehr.html">Verkehr</a>
+        <a id="navCo2" href="../CO2Komp.html">CO<sub>2</sub> Kompensation</a>
+        <a id="navCalendar" href="../calendar.html">Kalender</a>
+        <a id="navInitiativen" href="../initiativen.html">Initiativen</a>
+        <a id="navNews" href="../news.html">News</a>
       </div>
     </div>
 
@@ -97,17 +97,17 @@ document.getElementById("navMenu").innerHTML = `
         <span class="fa fa-caret-down" style="pointer-events:none;"></span>
       </button>
       <div id="OnlineHandel" class="dropdown-content onlineHandel">
-        <a id="navOnlineShopping" href="Online-Handel.html">Online Handel</a>
-        <a id="navWool" href="Wolle.html">Wolle</a>
-        <a id="navZeroWaste" href="ZeroWaste.html">Zero Waste</a>
+        <a id="navOnlineShopping" href="../Online-Handel.html">Online Handel</a>
+        <a id="navWool" href="../Wolle.html">Wolle</a>
+        <a id="navZeroWaste" href="../ZeroWaste.html">Zero Waste</a>
       </div>
     </div>
 
-    <a id="navGardening" href="gardening.html">Gärtnern</a>
+    <a id="navGardening" href="../gardening.html">Gärtnern</a>
 
-    <a id="navClothing" href="clothing.html">Kleidung</a>
+    <a id="navClothing" href="../clothing.html">Kleidung</a>
     
-    <a id="navReuse" href="Weiterverwenden.html">Weiterverwenden</a>
+    <a id="navReuse" href="../Weiterverwenden.html">Weiterverwenden</a>
 
     <a href="javascript:void(0);" class="icon" onclick="(new outer(x)).toggleDropdown();">
       <i class="fa fa-bars"></i>
@@ -122,9 +122,9 @@ document.getElementById("footer").innerHTML = `
   
   
 <p class="footer-links">
-  <a id="navStart" href="index.html">Home</a>
-  <a href="about_us.html">Über uns</a>
-  <a href="impressum.html">Impressum</a>
+  <a id="navStart" href="../index.html">Home</a>
+  <a href="about_us.html">../Über uns</a>
+  <a href="impressum.html">../Impressum</a>
 </p>
 
 </div>
