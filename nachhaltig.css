@@ -237,14 +237,15 @@ li{
     background: transparent; 
 }
 #header{
-    font-size:10vw;
+    font-size:9vw;
     font-family: 'Kalam', sans-serif;
     z-index: 10;
+    margin-block-end: 0.3em;
 }
 #news_header{
     padding-top: 49px;
     font-size: 40px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'DinNeuzeitGrotesk', sans-serif;
     z-index: 10;
     margin-bottom: 0;
 }
