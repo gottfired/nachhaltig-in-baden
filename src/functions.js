@@ -142,6 +142,11 @@ document.getElementById("footer").innerHTML = `
   <p><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Nachhaltig-in-Baden-2032209543481630/">Facebook</a></p>
 </div>
 
+<div>
+<i class="fa fa-instagram" aria-hidden="true"></i>
+  <p><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/nachhaltiginbaden/">Instagram</a></p>
+</div>
+
 
 </div>
 
