@@ -5,6 +5,7 @@ html, body {
     margin: 0px;
     background-color: white;
     font-family: 'Signika', sans-serif;
+    position: relative;
 }
 
 body {
@@ -243,11 +244,12 @@ li{
     margin-block-end: 0.3em;
 }
 #news_header{
-    padding-top: 49px;
+    padding-top: 75.8px;
     font-size: 40px;
     font-family: 'DinNeuzeitGrotesk', sans-serif;
     z-index: 10;
     margin-bottom: 0;
+    margin-top: 0
 }
 .news_container {
     margin:0 auto;
@@ -258,7 +260,7 @@ li{
 #news_subheader{
     display: flex;
     justify-content: space-around;
-    max-width: 200px;
+    max-width: 250px;
     color: #999999;
 }
 #news_symbol{
@@ -426,6 +428,73 @@ li{
     height: 100%; 
     width: 50%;
 }
+
+.presse_link{
+    text-decoration: none;
+    color: inherit;
+}
+.presse_link_outer{
+    display: flex;
+    border: 1px solid #043926;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.presse_link_outerst{
+    position: relative;
+    margin-bottom: 50px;
+
+}
+.presse_link_outer:before{
+    z-index: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #043926;
+    -webkit-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.presse_link_outer:hover{
+    color: white;
+}
+.presse_link_outer:hover:before{
+    width: 100%;
+    color: #fff;
+}
+.presse_link_inner1{
+    font-size: 24px;
+    flex: 1 1 auto;
+    padding: 1rem;
+    
+    position: relative;
+    overflow: hidden;
+    transition: color 0.2s ease-in-out;
+    
+}
+.presse_link_inner2{
+    z-index: 2;
+    position: relative;
+    right: 0;
+    justify-content: center;
+    align-self: center;
+    color: white;
+    padding: 1rem 2.5rem 1rem 1rem;
+}
+.details{
+    display: block;
+    font-size: 0.75em;
+    margin-top: 5px;
+}
+
 
 /* Valid only for desktop */
 @media screen and (min-width: 1000px) {
