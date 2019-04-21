@@ -494,7 +494,10 @@ li{
     font-size: 0.75em;
     margin-top: 5px;
 }
-
+.responsive_img{
+    max-width: 100%;
+    height: auto;
+}
 
 /* Valid only for desktop */
 @media screen and (min-width: 1000px) {

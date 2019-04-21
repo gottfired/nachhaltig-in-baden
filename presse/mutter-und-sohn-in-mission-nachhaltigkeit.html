@@ -33,16 +33,30 @@
 
     <link rel="icon" href="../bilder/logo1.png">
 
+    <style>
+        @media screen and (min-width: 500px) {
+            #footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+
+            #presse_div {
+                height: calc(100vh - 300px);
+                overflow: hidden;
+                display: block;
+                position: relative;
+                padding-bottom: 300px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
     <nav id="navMenu"></nav>
 
-    <div style="height: calc(100vh - 300px); 
-    overflow: hidden;
-    display: block;
-    position: relative;
-    padding-bottom: 300px;">
+    <div id="presse_div">
         <div class="news_container">
 
             <h1 id="news_header">Mutter und Sohn in "Mission" Nachhaltigkeit</h1>
@@ -62,9 +76,7 @@
 
         </div>
 
-        <footer id="footer" class="footer-distributed" style="position: absolute;
-        bottom: 0;
-        width: 100%;"></footer>
+        <footer id="footer" class="footer-distributed"></footer>
 
     </div>
 
