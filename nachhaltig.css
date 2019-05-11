@@ -257,6 +257,11 @@ li{
     padding-left: 20px;
     padding-right: 20px;
 }
+.map_container{
+    margin:0 auto;
+    max-width: 1200px;
+    margin-bottom: 100px;
+}
 #news_subheader{
     display: flex;
     justify-content: space-around;

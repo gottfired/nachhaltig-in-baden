@@ -87,7 +87,7 @@ document.getElementById("navMenu").innerHTML = `
         <a id="navCo2" href="../CO2Komp.html">CO<sub>2</sub> Kompensation</a>
         <a id="navCalendar" href="../calendar.html">Kalender</a>
         <a id="navInitiativen" href="../initiativen.html">Initiativen</a>
-        <a id="navNews" href="../news.html">News</a>
+        <a id="navNews" href="../news.html">Magazin</a>
       </div>
     </div>
 
