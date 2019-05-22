@@ -109,6 +109,8 @@ document.getElementById("navMenu").innerHTML = `
     
     <a id="navReuse" href="../Weiterverwenden.html">Weiterverwenden</a>
 
+    <a id="navParents" href="../parentsforfuture.html">Parents for Future</a>
+
     <a href="javascript:void(0);" class="icon" onclick="(new outer(x)).toggleDropdown();">
       <i class="fa fa-bars"></i>
     </a>
