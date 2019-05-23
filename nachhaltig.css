@@ -503,6 +503,15 @@ li{
     max-width: 100%;
     height: auto;
 }
+.preview{
+    width: 230px;
+    height: 172.5px;
+    padding: 5px;
+    transition: 0.3s;
+}
+.preview:hover{
+    transform: scale(1.1);
+}
 
 /* Valid only for desktop */
 @media screen and (min-width: 1000px) {
