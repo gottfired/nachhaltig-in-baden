@@ -1,168 +1,196 @@
 <!DOCTYPE html>
 
 <html lang="de-DE">
-
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143358819-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-143358819-1');
-  </script>
-
-  <meta charset="utf-8">
-  <title>Nachhaltig in Baden</title>
-
-  <link href="nachhaltig.css" type="text/css" rel="stylesheet">
-  <link href="footer.css" type="text/css" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="parallax.min.js"></script>
-
-  <meta name="author" content="Florian Chen">
-  <meta name="description"
-    content="Umweltbewusst und regional einkaufen, Initiativen in Baden, Informationen und Tipps für ein nachhaltiges Leben und alle interessanten Termine dazu.">
-
-  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="bilder/logo1.png">
-
-</head>
-
-
-<body>
-
-  <nav id="navMenu"></nav>
-
-  <div style="background-color: rgb(217, 158, 137);" data-parallax="scroll" data-z-index="1"
-    data-image-src="bilder/restaurant.jpg" class="topcontainer">
-    <h1 id="header">Restaurants</h1>
-  </div>
-  <div class="map_container">
-    <div id="treedayWidgetHolder">
-      <iframe webkitAllowFullScreen="true" mozallowfullscreen="true" allowFullscreen="true"
-        id="treedayWidgetIframe"></iframe>
-    </div>
-    <script>
-      function getParameterByName(name) {
-        if (name === 'treedayWidgetSrc') {
-          // bypass everything its in the end regex doesnt work
-          var s = '' + location.search;
-          if (s.indexOf('treedayWidgetSrc=') > -1) {
-            var t = s.substring(s.indexOf('treedayWidgetSrc=') + 17, s.length);
-            t = t.trim();
-            var urlComponents = t.split('/');
-            if (urlComponents.length > 0) {
-              var hash = urlComponents[urlComponents.length - 1];
-              if (urlComponents.length > 6) {
-                hash = hash.replace(/=/g, '');
-                var needPadding = hash.length % 4;
-                if (needPadding) {
-                  if (needPadding === 3 || needPadding === 1) {
-                    hash += '=';
-                  } else {
-                    hash += '==';
-                  }
-                }
-                urlComponents[urlComponents.length - 1] = hash;
-              }
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-143358819-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
             }
-            var newHash = urlComponents.join('/');
-            return newHash;
-          }
-        }
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-          results = regex.exec(location.search);
-        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-      }
-      var src = getParameterByName('treedayWidgetSrc');
-      var locale = getParameterByName('treedayWidgetLocale');
-      var treedayWidgetHeight = getParameterByName('treedayWidgetHeight') || '900px';
-      var treedayWidgetWidth = getParameterByName('treedayWidgetWidth') || '100%';
-      if (!src) {
-        src = 'https://www.treeday.net/iframe-nachhaltigburgenland/search/true/true/eyJ0eXBlIjoic2VhcmNoIiwidXNlciI6eyJ0cmVlTG9jYXRpb25MbmdMYXQiOlsxNi4zMDU5NjQ3OTk5OTk5Nyw0OC4xOTYyOTQ1MDAwMDAwMV0sInRyZWVDb3VudHJ5Q29kZSI6IkFUIn0sInF1ZXJ5Ijp7Im9ubGluZVNob3BPbmx5IjpudWxsLCJiaW9DZXJ0aWZpZWQiOmZhbHNlLCJyZXNwb25zZSI6eyJaRVJPX1JFU1VMVFMiOlsicmVjb21tZW5kZWQtY29tcGFuaWVzIl0sIlBPU19DT1VOVFMiOnRydWV9LCJvcmRlckJ5Ijp7ImZpZWxkIjoic190cmVlZGF5SW5kZXgiLCJvcmRlciI6ImRlc2MifSwicGFydG5lcklkcyI6W119LCJ0eXBlc1BhcmFtcyI6eyJzZWFyY2giOnsia2V5d29yZHMiOiIiLCJpbmR1c3RyeUlkcyI6WzM3NDA0NCwxMDk0NjgxNiwxMzMwXX19fQ=='
-      }
-      var ifEl = document.getElementById('treedayWidgetIframe');
-      ifEl.src = src;
-      ifEl.scrolling = "no";
-      ifEl.frameborder = "0";
-      ifEl.width = treedayWidgetWidth;
-      ifEl.height = treedayWidgetHeight;
-    </script>
-  </div>
-  <div class="text_container">
+            gtag("js", new Date());
 
-    <div id="text">
+            gtag("config", "UA-143358819-1");
+        </script>
 
-      <div class="content_container">
-        <a target="_blank" rel="noopener noreferrer" href="https://www.prokopp.co.at/blog/baden/"><img
-            style="max-width: 200px;" class="item" style="flex:1;"
-            src="https://www.prokopp.co.at/skin/frontend/base/default/images/prokopp_logo.png"></a>
-        <p class="itemm" style="flex:4;"><b>Prokopp: Gewusst wie</b><br>Vegetaria, das Restaurant von Prokopp punktet
-          vor allem durch seine fantasievollen Gerichte, aus regionalen, saisonalen Biolebensmitteln gezaubert. Die
-          Menüpläne der Vollwertküche sind online abrufbar. Und wer die kreativen Rezepte besonders gut und
-          geschmackvoll findet, möchte vielleicht in einem der Kochkurse von Ulli Garherr (Mehr Informationen oder
-          Anmeldung für Kochkurse: prokopp.02@speed.at oder 02252/ 48 36 117) den einen oder anderen Tipp erlernen</p>
-        <p class="item" style="flex:2;"><br>Adresse: Rathausgasse 5-7,<br>2500 Baden<br>
-          Telefon: +43 (0) 2252 483 61<br>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.prokopp.co.at/blog/baden/">zur Website</a></p>
-      </div>
+        <meta charset="utf-8" />
+        <title>Nachhaltig in Baden</title>
 
-      <div class="content_container">
-        <a target="_blank" rel="noopener noreferrer" href="http://www.kochkiste.at/"><img style="max-width: 200px;"
-            class="item" style="flex:1;" src="bilder/kochkiste_neu_2017.png"></a>
-        <p class="itemm" style="flex:4;"><b>Kochkiste</b><br>Monika erfüllte sich mit der Kochkiste einen Traum. In der
-          vollständig einsehbaren
-          Schauküche bereiten sie und ihre Kolleginnen täglich frische, köstliche  Speisen aus
-          saisonalen Bio – Zutaten für Sie zu. Die drei wichtigsten Merkmale der
-          Kochkisteküche sind biologisch – vegan – vegetarisch. Kräuter und Obst stammen aus
-          dem seit Jahrzehnten biologisch bewirtschafteten, hauseigenen Garten, auch alle
-          anderen Zutaten werden durch die Austria Bio Garantie regelmäßig geprüft und
-          zertifiziert. Alle Speisen gibt es auch bequem zum Mitnehmen.</p>
-        <p class="item" style="flex:2;"><br>Adresse: Hauptstraße 30,<br>2340 Mödling<br>
-          Telefon: 0699 184 210 20<br>
-          E-Mail: office@kochkiste.at<br>
-          <a target="_blank" rel="noopener noreferrer" href="http://www.kochkiste.at/">zur Website</a></p>
-      </div>
+        <link href="nachhaltig.css" type="text/css" rel="stylesheet" />
+        <link href="footer.css" type="text/css" rel="stylesheet" />
 
-      <div class="content_container">
-        <a target="_blank" rel="noopener noreferrer" href="https://www.hotel-holzinger.at/index.php"><img
-            style="max-width: 200px;" class="item" style="flex:1;"
-            src="https://www.hotel-holzinger.at/media/360/cms_516aa0b048513.png"></a>
-        <p class="itemm" style="flex:4;"><b>Biogastwirtschaft Holzinger</b><br>Der „Holzinger“ ist seit März 2016
-          die erste bio-zertifizierte Gastwirtschaft im Bezirk Baden mit
-          regionaler und nachhaltiger Küche, dazu werden hauptsächlich Produkte aus den Genussregionen
-          Österreich sowie Erzeugnisse von ausgesuchten Bio-Bauern und Produzenten verwendet.
-          Besonderheiten sind das Familienessen sowie der Familienbrunch mit kreativem Kinderprogramm
-          (Termine online, Reservierung erforderlich). Das Speisenangebot ändert sich laufend alle 3-4
-          Wochen, um sich der saisonalen Verfügbarkeit der Lebensmittel und dem österreichischen
-          kulinarischen Kalender anzupassen. Die Weinliste gestaltet sich rein österreichisch, mit dem
-          natürlichen Schwerpunkt auf Weinen aus der Thermenregion</p>
-        <p class="item" style="flex:2;"><br>Adresse: Teichgasse 2,<br>A-2514 Möllersdorf<br>
-          Telefon: +43 2252 52 455<br>
-          E-Mail: info@hotel-holzinger.at<br>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.hotel-holzinger.at/index.php">zur Website</a>
-        </p>
-      </div>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
 
-    </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="parallax.min.js"></script>
 
-  </div>
+        <meta name="author" content="Florian Chen" />
+        <meta
+            name="description"
+            content="Umweltbewusst und regional einkaufen, Initiativen in Baden, Informationen und Tipps für ein nachhaltiges Leben und alle interessanten Termine dazu."
+        />
 
-  <footer id="footer" class="footer-distributed"></footer>
+        <link
+            href="https://fonts.googleapis.com/css?family=Signika"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Kalam"
+            rel="stylesheet"
+        />
 
-  <script src="functions.js"></script>
-  <script>setActive("navFoodRestaurants")</script>
-</body>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="bilder/logo1.png" />
+    </head>
 
+    <body>
+        <nav id="navMenu"></nav>
 
+        <div
+            style="background-color: rgb(217, 158, 137);"
+            data-parallax="scroll"
+            data-z-index="1"
+            data-image-src="bilder/restaurant.jpg"
+            class="topcontainer"
+        >
+            <h1 id="header">Restaurants</h1>
+        </div>
+
+        <div class="text_container">
+            <div id="text">
+                <div class="content_container">
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.prokopp.co.at/blog/baden/"
+                        ><img
+                            style="max-width: 200px;"
+                            class="item"
+                            style="flex:1;"
+                            src="https://www.prokopp.co.at/skin/frontend/base/default/images/prokopp_logo.png"
+                    /></a>
+
+                    <p class="itemm" style="flex:4;">
+                        <b>Prokopp: Gewusst wie</b><br />Vegetaria, das
+                        Restaurant von Prokopp punktet vor allem durch seine
+                        fantasievollen Gerichte, aus regionalen, saisonalen
+                        Biolebensmitteln gezaubert. Die Menüpläne der
+                        Vollwertküche sind online abrufbar. Und wer die
+                        kreativen Rezepte besonders gut und geschmackvoll
+                        findet, möchte vielleicht in einem der Kochkurse von
+                        Ulli Garherr (Mehr Informationen oder Anmeldung für
+                        Kochkurse: prokopp.02@speed.at oder 02252/ 48 36 117)
+                        den einen oder anderen Tipp erlernen
+                    </p>
+                    <p class="item" style="flex:2;">
+                        <br />Adresse: Rathausgasse 5-7,<br />2500 Baden<br />
+                        Telefon: +43 (0) 2252 483 61<br />
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.prokopp.co.at/blog/baden/"
+                            >zur Website</a
+                        >
+                    </p>
+                </div>
+
+                <div class="content_container">
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="http://www.kochkiste.at/"
+                        ><img
+                            style="max-width: 200px;"
+                            class="item"
+                            style="flex:1;"
+                            src="bilder/kochkiste_neu_2017.png"
+                    /></a>
+
+                    <p class="itemm" style="flex:4;">
+                        <b>Kochkiste</b><br />Monika erfüllte sich mit der
+                        Kochkiste einen Traum. In der vollständig einsehbaren
+                        Schauküche bereiten sie und ihre Kolleginnen täglich
+                        frische, köstliche  Speisen aus saisonalen Bio – Zutaten
+                        für Sie zu. Die drei wichtigsten Merkmale der
+                        Kochkisteküche sind biologisch – vegan – vegetarisch.
+                        Kräuter und Obst stammen aus dem seit Jahrzehnten
+                        biologisch bewirtschafteten, hauseigenen Garten, auch
+                        alle anderen Zutaten werden durch die Austria Bio
+                        Garantie regelmäßig geprüft und zertifiziert. Alle
+                        Speisen gibt es auch bequem zum Mitnehmen.
+                    </p>
+                    <p class="item" style="flex:2;">
+                        <br />Adresse: Hauptstraße 30,<br />2340 Mödling<br />
+                        Telefon: 0699 184 210 20<br />
+                        E-Mail: office@kochkiste.at<br />
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="http://www.kochkiste.at/"
+                            >zur Website</a
+                        >
+                    </p>
+                </div>
+
+                <div class="content_container">
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.hotel-holzinger.at/index.php"
+                        ><img
+                            style="max-width: 200px;"
+                            class="item"
+                            style="flex:1;"
+                            src="https://www.hotel-holzinger.at/media/360/cms_516aa0b048513.png"
+                    /></a>
+
+                    <p class="itemm" style="flex:4;">
+                        <b>Biogastwirtschaft Holzinger</b><br />Der „Holzinger“
+                        ist seit März 2016 die erste bio-zertifizierte
+                        Gastwirtschaft im Bezirk Baden mit regionaler und
+                        nachhaltiger Küche, dazu werden hauptsächlich Produkte
+                        aus den Genussregionen Österreich sowie Erzeugnisse von
+                        ausgesuchten Bio-Bauern und Produzenten verwendet.
+                        Besonderheiten sind das Familienessen sowie der
+                        Familienbrunch mit kreativem Kinderprogramm (Termine
+                        online, Reservierung erforderlich). Das Speisenangebot
+                        ändert sich laufend alle 3-4 Wochen, um sich der
+                        saisonalen Verfügbarkeit der Lebensmittel und dem
+                        österreichischen kulinarischen Kalender anzupassen. Die
+                        Weinliste gestaltet sich rein österreichisch, mit dem
+                        natürlichen Schwerpunkt auf Weinen aus der Thermenregion
+                    </p>
+                    <p class="item" style="flex:2;">
+                        <br />Adresse: Teichgasse 2,<br />A-2514 Möllersdorf<br />
+                        Telefon: +43 2252 52 455<br />
+                        E-Mail: info@hotel-holzinger.at<br />
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.hotel-holzinger.at/index.php"
+                            >zur Website</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer" class="footer-distributed"></footer>
+
+        <script src="functions.js"></script>
+        <script>
+            setActive("navFoodRestaurants");
+        </script>
+    </body>
 </html>
