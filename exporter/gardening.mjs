@@ -5,6 +5,15 @@ import { entry } from "./entry_template.mjs";
 
 const data = [
     {
+        title: "Herbios",
+        description: `Mit den Vertikalbeeten hat Jürgen Herler eine Lösung für den kleinsten Garten, Balkon, Terassenplatz entwickelt. In den vertikalen Gärten wachsen Pflanzen in mehreren Etagen übereinander und ermöglichen so große Ernten auf kleinem Platz. Besonders interessant auch als Wintergemüsegarten!`,
+        web: "https://www.vertikalbeet.at/",
+        image: "bilder/herbios.png",
+        address: `Häuselbachgasse 601<br>
+        3034 Maria Anzbach<br>
+        E-Mail: office@herbios.at`
+    },
+    {
         title: "Mundraub",
         description:
             "Früchte von öffentlich stehenden Bäumen und Sträuchern werden oft nicht abgeerntet und gehen so kaputt. Mit Hilfe der Mundraub-Landkarte wird dem entgegen gewirkt: Kennen Sie einen Obstbaum im öffentlichen Raum - tragen Sie ihn bitte in der Landkarte ein. So wird das Wissen über diese Schätze in der nächsten Umgebung geteilt und hoffentlich können sich mehr Menschen an den Früchten erfreuen und sie ernten",
@@ -251,7 +260,7 @@ const data = [
         image: "bilder/wurmkiste.png",
         address: `Telefon: 0043 7766 42200<br>
         E-Mail: office@wurmkiste.at<br>`
-    }
+    },
 ];
 
 export function generate() {
