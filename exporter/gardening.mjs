@@ -11,7 +11,7 @@ const data = [
         image: "bilder/herbios.png",
         address: `Häuselbachgasse 601<br>
         3034 Maria Anzbach<br>
-        E-Mail: office@herbios.at`
+        E-Mail: office@herbios.at<br>`
     },
     {
         title: "Mundraub",
