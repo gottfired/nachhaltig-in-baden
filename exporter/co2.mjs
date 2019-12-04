@@ -12,7 +12,7 @@ const data = [
         Kochern in Ruanda, Wärmepumpe für das Österreichische Rote Kreuz in
         Niederösterreich, Biomasse Einzelanlage für den Zoo in Innsbruck)`,
         web: "https://www.regreen.at/",
-        image: "https://www.regreen.at/images/regreen_logo_RGB_500px.png",
+        image: "https://www.regreen.at/img/regreen-logo.40bdfd60.svg",
         address: `Adresse: Johann-Teufel-Gasse 74 - 80/10,<br>
         1230 Wien<br>
         Telefon: +43 6601242418<br>
