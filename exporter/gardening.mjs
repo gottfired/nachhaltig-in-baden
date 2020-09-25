@@ -11,24 +11,25 @@ const data = [
         image: "bilder/herbios.png",
         address: `Häuselbachgasse 601<br>
         3034 Maria Anzbach<br>
-        E-Mail: office@herbios.at<br>`
+        E-Mail: office@herbios.at<br>`,
     },
     {
         title: "Mundraub",
         description:
             "Früchte von öffentlich stehenden Bäumen und Sträuchern werden oft nicht abgeerntet und gehen so kaputt. Mit Hilfe der Mundraub-Landkarte wird dem entgegen gewirkt: Kennen Sie einen Obstbaum im öffentlichen Raum - tragen Sie ihn bitte in der Landkarte ein. So wird das Wissen über diese Schätze in der nächsten Umgebung geteilt und hoffentlich können sich mehr Menschen an den Früchten erfreuen und sie ernten",
         web: "http://mundraub.org/",
-        image: "bilder/mundraub.svg"
+        image: "bilder/mundraub.svg",
     },
     {
         title: "Heckentag",
         description:
             "Am NÖ Heckentag bekommen Sie perfekt an unsere Standortbedingungen angepasste Sträucher und Bäume, die aus unserer Region stammen. Die Auswahl reicht von Schmetterlings-, Beeren- über Sichtschutzhecken bis zu Obstbäumchen. Online vorbestellen, im November können die Pflanzen dann gekauft und abgeholt werden. ",
         web: "https://www.heckentag.at/",
-        image: "https://www.heckentag.at/logo_rgv.png",
+        image:
+            "https://static.wixstatic.com/media/0e630a_08123160b3a84c07abc566f80ba4881c~mv2.png/v1/fill/w_169,h_159,al_c,usm_0.66_1.00_0.01/RGV_neutral_weisser_HG_mit_Schatten.png",
         address: `Zeile 85, A-2020 Aspersdorf<br>
         Telefon: 02952 4344-830 (jeden Donnerstag von 9.00 bis 12.00 Uhr)<br>
-        Email: office@heckentag.at<br>`
+        Email: office@heckentag.at<br>`,
     },
     {
         title: "Gartenernte",
@@ -38,7 +39,7 @@ const data = [
         web: "https://www.gartenernte.at/",
         image: "bilder/Gartenernte_Logo_300dpi_CMYK.jpg",
         address: `Telefon: +43 1 7896267<br>
-        E-Mail: office@gartenernte.at<br>`
+        E-Mail: office@gartenernte.at<br>`,
     },
     {
         title: "Gärtnern im Gutenbrunnerpark: Gemeinschaftsgarten",
@@ -57,9 +58,8 @@ const data = [
         `,
         web:
             "https://www.naturimgarten.at/unser-angebot/gemeinschaftsg%C3%A4rtnerinnen/garten/baden-gutenbrunnerpark.html",
-        image:
-            "https://www.naturimgarten.at/assets/images/4/garten03-b99f2a02.jpg",
-        address: ` E-Mail: unsergarten@baden.at<br>`
+        image: "https://www.naturimgarten.at/assets/images/0/NiG_Logo_N_mit-Weissraum-00240cf3.svg",
+        address: ` E-Mail: unsergarten@baden.at<br>`,
     },
     {
         title: "Natur im Garten",
@@ -70,10 +70,9 @@ const data = [
         Hobbygärtner braucht. Unser Tipp: die Beratung am Gartentelefon ist erstklassig – egal
         welche Fragen man hat.`,
         web: "https://www.naturimgarten.at/",
-        image:
-            "https://www.naturimgarten.at/assets/images/b/nig-logo-ae9a1f56.png",
+        image: "https://www.naturimgarten.at/assets/images/0/NiG_Logo_N_mit-Weissraum-00240cf3.svg",
         address: ` Telefon: 02742/ 74333 <br>
-        E-Mail: gartentelefon@naturimgarten.at<br>`
+        E-Mail: gartentelefon@naturimgarten.at<br>`,
     },
     {
         title: "Regionalstandort Baden",
@@ -81,13 +80,12 @@ const data = [
         beraten gerne bei jeglichen Fragen rund um Garten,
         biologisches Gärtnern, Schädlinge etc. Die Beratungen finden jeweils Freitag von 9-13h im Gärtnerhaus im
         Doblhoffpark statt, Voranmeldung ist unbedingt erforderlich!`,
-        web: "https://www.naturimgarten.at/",
-        image:
-            "https://www.naturimgarten.at/assets/images/b/nig-logo-ae9a1f56.png",
+        web: "https://www.naturimgarten.at/%C3%BCber-uns/regionalstandorte.html",
+        image: "https://www.naturimgarten.at/assets/images/0/NiG_Logo_N_mit-Weissraum-00240cf3.svg",
         address: `Gärtnerhaus im Doblhoffpark<br>Adresse: Pelzgasse 1, <br>
         2500 Baden<br>
         Telefon: 02742/ 74333 <br>
-        E-Mail: gartentelefon@naturimgarten.at<br>`
+        E-Mail: gartentelefon@naturimgarten.at<br>`,
     },
     {
         title: "Chwala Kompost Erde Kies GmbH",
@@ -98,12 +96,11 @@ const data = [
         umweltfreundlich und ohne chemische Zusätze zu hochwertigem Rohkompost weiterverarbeitet.
         Ebenso können Sie dort hochwertigen Kompost kaufen.`,
         web: "https://kompost-erde-kies.at/",
-        image:
-            "https://kompost-erde-kies.at/wp-content/uploads/2015/02/logo_single_mobile.jpg",
+        image: "https://kompost-erde-kies.at/wp-content/uploads/2015/02/logo_single_mobile.jpg",
         address: `Adresse: Fasangasse 41, <br>
         2540 Bad Vöslau<br>
         Telefon: +43 (0)2252-79 09 26<br>
-        E-Mail: office@kompost-erde-kies.at<br>`
+        E-Mail: office@kompost-erde-kies.at<br>`,
     },
     {
         title: "Stockreiter",
@@ -112,11 +109,10 @@ const data = [
         und Grünschnittsammelplätzen weiterverarbeiten, Kompost eignet sich für jeden
         Garten, Balkon, Dachbegrünung etc.`,
         web: "http://www.stockreiter.co.at/",
-        image:
-            "http://www.stockreiter.co.at/images/komposthof_termine_350x235.jpg",
+        image: "http://www.stockreiter.co.at/images/komposthof_termine_350x235.jpg",
         address: `Adresse: Hohenluckengasse, <br>2551 Lindabrunn<br>
         Telefon: 02256/81269<br>
-        E-Mail: kompost@stockreiter.co.at<br>`
+        E-Mail: kompost@stockreiter.co.at<br>`,
     },
     {
         title: "Garten der Begegnung",
@@ -130,10 +126,10 @@ const data = [
         Unser Tipp: Orientalisches Frühstück am Samstag ab 11h`,
         web: "https://www.gartenderbegegnung.com/",
         image:
-            "https://static.wixstatic.com/media/7c62bd_22c77bc40e4c4a889514cfb7643f935e~mv2.png/v1/fill/w_612,h_120,al_c,q_80,usm_0.66_1.00_0.01/7c62bd_22c77bc40e4c4a889514cfb7643f935e~mv2.webp",
+            "https://static.wixstatic.com/media/7c62bd_22c77bc40e4c4a889514cfb7643f935e~mv2.png/v1/fill/w_617,h_120,al_c,usm_0.66_1.00_0.01/7c62bd_22c77bc40e4c4a889514cfb7643f935e~mv2.png",
         address: `Adresse: Akademiestraße Ecke Einödgasse,<br>
         2514 Traiskirchen<br>
-        Telefon:  0699 11176565<br>`
+        Telefon:  0699 11176565<br>`,
     },
     {
         title: "Biomasserecycling",
@@ -148,7 +144,7 @@ const data = [
         address: `Adresse: Hauptstraße 29,<br>
         2482 Münchendorf<br>
         Telefon: 02259 2323<br>
-        E-Mail: info@biomasserecycling.at<br>`
+        E-Mail: info@biomasserecycling.at<br>`,
     },
     {
         title: "Karl Kuchner",
@@ -166,7 +162,7 @@ const data = [
         address: `Adresse: Pöllau 4,<br>
         2560 Berndorf<br>
         Telefon: 02672 854 23<br>
-        E-Mail: karl.kuchner@aon.at<br>`
+        E-Mail: karl.kuchner@aon.at<br>`,
     },
     {
         title: "Natürlich Kopp",
@@ -184,7 +180,7 @@ const data = [
         address: `Adresse: Trumauerstr. 100,<br>
         2514 Traiskirchen<br>
         Telefon: 0699/ 184 951 52<br>
-        E-Mail: office@natuerlichkopp.at<br>`
+        E-Mail: office@natuerlichkopp.at<br>`,
     },
     {
         title: "Gartenbauverein Baden",
@@ -201,7 +197,7 @@ const data = [
         address: `Gärtnerhaus im Doblhoffpark<br>
         Adresse: Pelzgasse 1, <br>2500 Baden<br>
         Telefon: 0677 61343242<br>
-        E-Mail: gartenbauvereinbaden@gmx.at<br>`
+        E-Mail: gartenbauvereinbaden@gmx.at<br>`,
     },
     {
         title: "Kräuterspaziergänge",
@@ -215,7 +211,7 @@ const data = [
         address: `Adresse: Bahngasse 2a/1,<br>
         2500 Baden<br>
         Telefon: 06769661707<br>
-        E-Mail: andrea.hofmann@joando.at<br>`
+        E-Mail: andrea.hofmann@joando.at<br>`,
     },
     {
         title: "Garten Österreich",
@@ -225,11 +221,10 @@ const data = [
         sind gemeinsame Sessions und Austausch zum Thema Kochen und Haltbarmachen der geernteten Lebensmittel geplant,
         Ziel ist es, einen eigenen Vorrat anzulegen, um nicht Lebensmittel aus dem Supermarkt kaufen zu müssen – wie
         zu Großmutters Zeiten.`,
-        web:
-            "https://www.facebook.com/pg/Garten-%C3%96sterreich-211551728968676/about/",
+        web: "https://www.facebook.com/pg/Garten-%C3%96sterreich-211551728968676/about/",
         image: "bilder/gartenOesterreich.jpg",
         address: ` Telefon: 0664 88542199<br>
-        E-Mail: chriscuda1974@gmail.com<br>`
+        E-Mail: chriscuda1974@gmail.com<br>`,
     },
     {
         title: "Wildkräuterwerkstatt",
@@ -245,7 +240,7 @@ const data = [
         Telefon: 0676/3802069,<br>
         0699/17745366<br>
         E-Mail: w.a.mozelt@gmx.at,<br>
-        epoelzl@gmx.net<br>`
+        epoelzl@gmx.net<br>`,
     },
     {
         title: "Wurmkiste",
@@ -259,7 +254,7 @@ const data = [
         web: "https://wurmkiste.at/",
         image: "bilder/wurmkiste.png",
         address: `Telefon: 0043 7766 42200<br>
-        E-Mail: office@wurmkiste.at<br>`
+        E-Mail: office@wurmkiste.at<br>`,
     },
 ];
 
@@ -271,15 +266,12 @@ export function generate() {
     const head = fs.readFileSync(path.join(__dirname, "/head.html"), "utf8");
 
     // Read template to string
-    const template = fs.readFileSync(
-        path.join(__dirname, "/gardening_template.html"),
-        "utf8"
-    );
+    const template = fs.readFileSync(path.join(__dirname, "/gardening_template.html"), "utf8");
 
     // Convert data array to html sections using entry template
     // then .join() to a single content string
     const entries = data
-        .map(element => {
+        .map((element) => {
             return entry
                 .replace("{title}", element.title)
                 .replace("{description}", element.description)
@@ -290,8 +282,5 @@ export function generate() {
         .join("\n\n");
 
     // replace() in template and write result html file
-    fs.writeFileSync(
-        "gardening.html",
-        template.replace("{head}", head).replace("{content}", entries)
-    );
+    fs.writeFileSync("gardening.html", template.replace("{head}", head).replace("{content}", entries));
 }
