@@ -1,7 +1,7 @@
-import * as gardening from "./gardening";
-import * as co2 from "./co2";
-import * as press from "./press";
-import * as news from "./news";
+import * as gardening from "./gardening.mjs";
+import * as co2 from "./co2.mjs";
+import * as press from "./press.mjs";
+import * as news from "./news.mjs";
 
 gardening.generate();
 co2.generate();
